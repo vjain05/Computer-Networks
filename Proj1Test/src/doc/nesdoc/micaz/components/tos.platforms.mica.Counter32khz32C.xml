@@ -1,0 +1,177 @@
+<?xml version="1.0" ?><component loc="22:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc" nicename="tos.platforms.mica.Counter32khz32C" qname="Counter32khz32C">
+      <documentation loc="11:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc">
+        <short>
+ 32-bit 32kHz Counter component as per TEP102 HAL guidelines.</short>
+        <long>
+ 32-bit 32kHz Counter component as per TEP102 HAL guidelines. The mica
+ family 32kHz clock is built on hardware timer 1, and actually runs at
+ CPU frequency / 256. You can use the MeasureClockC.cyclesPerJiffy()
+ command to figure out the exact frequency.
+
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="33:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc">
+          <from><interface-ref name="Counter" ref="0x407df010" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x407da7f0" scoped=""/></to>
+        </wire>
+        <wire loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc">
+          <from><interface-ref name="CounterFrom" ref="0x40801ae8" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x407dea08" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="24:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc" name="Counter" provided="1" ref="0x407df010">
+      <component-ref nicename="tos.platforms.mica.Counter32khz32C" qname="Counter32khz32C"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Counter" ref="0x407df010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="T32khz" ref="0x403a3268"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x4020e848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x407df760" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x407dfc50" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x407df9d8" scoped=""/>
+        <function-ref name="overflow" ref="0x407dfec8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="62:/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformCounterC.nc" name="Counter" provided="1" ref="0x407da7f0">
+      <component-ref nicename="tos.lib.timer.TransformCounterC" qname="Counter32khz32C.Transform32"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Counter" ref="0x407da7f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="T32khz" ref="0x403a3268"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x4020e848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x40801010" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x40801500" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x40801288" scoped=""/>
+        <function-ref name="overflow" ref="0x40801778" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="24:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/CounterOne16C.nc" name="Counter" provided="1" ref="0x407dea08">
+      <component-ref nicename="tos.platforms.mica.CounterOne16C" qname="CounterOne16C"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Counter" ref="0x407dea08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x407d9200" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x407d96f0" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x407d9478" scoped=""/>
+        <function-ref name="overflow" ref="0x407d9968" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="63:/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformCounterC.nc" name="CounterFrom" provided="0" ref="0x40801ae8">
+      <component-ref nicename="tos.lib.timer.TransformCounterC" qname="Counter32khz32C.Transform32"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CounterFrom" ref="0x40801ae8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x40800308" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x408007f8" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x40800580" scoped=""/>
+        <function-ref name="overflow" ref="0x40800a70" scoped=""/>
+      </interface-functions>
+    </interface><component loc="54(Counter32khz32C.Transform32):/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformCounterC.nc" nicename="tos.lib.timer.TransformCounterC" qname="Counter32khz32C.Transform32">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformCounterC.nc">
+        <short>
+ TransformCounterC decreases precision and/or widens an Counter.</short>
+        <long>
+ TransformCounterC decreases precision and/or widens an Counter.
+
+ &lt;p&gt;See TEP102 for more details.
+
+ @param to_precision_tag A type indicating the precision of the transformed
+   Counter.
+ @param to_size_type The type for the width of the transformed Counter.
+ @param from_precision_tag A type indicating the precision of the original
+   Counter.
+ @param from_size_type The type for the width of the original Counter.
+ @param bit_shift_right Original time units will be 2 to the power 
+   &lt;code&gt;bit_shift_right&lt;/code&gt; larger than transformed time units.
+ @param upper_count_type A type large enough to store the upper bits --
+   those needed above from_size_type after its shift right to fill
+   to_size_type.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.lib.timer.TransformCounterC" qname="TransformCounterC"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="T32khz" ref="0x403a3268"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x4020e848"/></typename>
+          </type-int>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+          <value cst="I:0">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="counter_one_overflow_t" ref="0x403c2148"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="22:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/CounterOne16C.nc" nicename="tos.platforms.mica.CounterOne16C" qname="CounterOne16C">
+      <documentation loc="11:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/CounterOne16C.nc">
+        <short>
+ 16-bit 32kHz Counter component as per TEP102 HAL guidelines.</short>
+        <long>
+ 16-bit 32kHz Counter component as per TEP102 HAL guidelines. The mica
+ family 32kHz clock is built on hardware timer 1, and actually runs at
+ CPU frequency / 256. You can use the MeasureClockC.cyclesPerJiffy()
+ command to figure out the exact frequency.
+
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="31:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/CounterOne16C.nc">
+          <from><interface-ref name="Counter" ref="0x407dea08" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x407d7320" scoped=""/></to>
+        </wire>
+        <wire loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/CounterOne16C.nc">
+          <from><interface-ref name="Timer" ref="0x407d6568" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x406eeaa0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

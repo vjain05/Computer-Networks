@@ -1,0 +1,287 @@
+<?xml version="1.0" ?><component abstract="" loc="28:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc" nicename="tos.platforms.mica.AlarmOne16C" qname="AlarmOne16C">
+      <documentation loc="11:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc">
+        <short>
+ 16-bit 32kHz Alarm component as per TEP102 HAL guidelines.</short>
+        <long>
+ 16-bit 32kHz Alarm component as per TEP102 HAL guidelines. The mica
+ family 32kHz Alarm is built on hardware timer 1, and actually runs at
+ CPU frequency / 256. You can use the MeasureClockC.cyclesPerJiffy()
+ command to figure out the exact frequency.
+ &lt;p&gt;
+ Assumes an ~8MHz CPU clock, replace this component if you are running at
+ a radically different frequency.
+ &lt;p&gt;
+ Upto three of these alarms can be created (one per hardware compare
+ register).
+
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="41:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc">
+          <from><interface-ref name="Alarm" ref="0x406e8d50" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x407b8230" scoped=""/></to>
+        </wire>
+        <wire loc="43:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc">
+          <from><interface-ref name="HplAtm128Timer" ref="0x407d4c20" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x406eeaa0" scoped=""/></to>
+        </wire>
+        <wire loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc">
+          <from><interface-ref name="HplAtm128Compare" ref="0x407d2e68" scoped=""/></from>
+          <to><interface-ref name="Compare" ref="0x406f42f0" scoped=""/>
+          <arguments>
+            <value cst="U:">
+              <type-int alignment="I:1" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    <specification><interface loc="30:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc" name="Alarm" provided="1" ref="0x406e8d50">
+      <component-ref nicename="tos.platforms.mica.AlarmOne16C" qname="AlarmOne16C"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Alarm" ref="0x406e8d50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x406e3258" scoped=""/>
+        <function-ref name="fired" ref="0x406e4a00" scoped=""/>
+        <function-ref name="startAt" ref="0x406e4ef0" scoped=""/>
+        <function-ref name="isRunning" ref="0x406e4c78" scoped=""/>
+        <function-ref name="getAlarm" ref="0x406e34d0" scoped=""/>
+        <function-ref name="start" ref="0x406e44e8" scoped=""/>
+        <function-ref name="stop" ref="0x406e4788" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc" name="Timer" provided="1" ref="0x406eeaa0">
+      <component-ref nicename="tos.chips.atm128.timer.HplAtm128Timer1C" qname="HplAtm128Timer1C"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Timer" ref="0x406eeaa0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Timer" qname="HplAtm128Timer"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="off" ref="0x406f3538" scoped=""/>
+        <function-ref name="test" ref="0x406f3048" scoped=""/>
+        <function-ref name="get" ref="0x406e0120" scoped=""/>
+        <function-ref name="setScale" ref="0x406f37b0" scoped=""/>
+        <function-ref name="getScale" ref="0x406f3a50" scoped=""/>
+        <function-ref name="reset" ref="0x406e08b0" scoped=""/>
+        <function-ref name="overflow" ref="0x406e0638" scoped=""/>
+        <function-ref name="isOn" ref="0x406f32c0" scoped=""/>
+        <function-ref name="set" ref="0x406e0398" scoped=""/>
+        <function-ref name="start" ref="0x406e0b28" scoped=""/>
+        <function-ref name="stop" ref="0x406e0da0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/Atm128AlarmC.nc" name="HplAtm128Compare" provided="0" ref="0x407d2e68">
+      <component-ref nicename="tos.chips.atm128.timer.Atm128AlarmC" qname="AlarmOne16C.NAlarm"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="HplAtm128Compare" ref="0x407d2e68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Compare" qname="HplAtm128Compare"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="test" ref="0x407cf3e8" scoped=""/>
+        <function-ref name="fired" ref="0x407d09f0" scoped=""/>
+        <function-ref name="get" ref="0x407d04d8" scoped=""/>
+        <function-ref name="reset" ref="0x407d0c68" scoped=""/>
+        <function-ref name="isOn" ref="0x407cf660" scoped=""/>
+        <function-ref name="set" ref="0x407d0750" scoped=""/>
+        <function-ref name="start" ref="0x407d0ee0" scoped=""/>
+        <function-ref name="stop" ref="0x407cf170" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc" name="Compare" provided="1" ref="0x406f42f0">
+      <component-ref nicename="tos.chips.atm128.timer.HplAtm128Timer1C" qname="HplAtm128Timer1C"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Compare" ref="0x406f42f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Compare" qname="HplAtm128Compare"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="test" ref="0x40708840" scoped=""/>
+        <function-ref name="fired" ref="0x406f4e50" scoped=""/>
+        <function-ref name="get" ref="0x406f4938" scoped=""/>
+        <function-ref name="reset" ref="0x407080d8" scoped=""/>
+        <function-ref name="isOn" ref="0x40708ab8" scoped=""/>
+        <function-ref name="set" ref="0x406f4bb0" scoped=""/>
+        <function-ref name="start" ref="0x40708350" scoped=""/>
+        <function-ref name="stop" ref="0x407085c8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/Atm128AlarmC.nc" name="Alarm" provided="1" ref="0x407b8230">
+      <component-ref nicename="tos.chips.atm128.timer.Atm128AlarmC" qname="AlarmOne16C.NAlarm"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Alarm" ref="0x407b8230" scoped=""/></type-interface>
+      <attribute-value>
+        <attribute-ref name="atmostonce" ref="0x4034a3d0"/>
+        <value-structured>
+          <type-tag alignment="I:1" size="I:0"><attribute-ref name="atmostonce" ref="0x4034a3d0"/></type-tag>
+        </value-structured>
+      </attribute-value>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x407d46e8" scoped=""/>
+        <function-ref name="fired" ref="0x407b8e98" scoped=""/>
+        <function-ref name="startAt" ref="0x407d43a8" scoped=""/>
+        <function-ref name="isRunning" ref="0x407d4130" scoped=""/>
+        <function-ref name="getAlarm" ref="0x407d4960" scoped=""/>
+        <function-ref name="start" ref="0x407b8980" scoped=""/>
+        <function-ref name="stop" ref="0x407b8c20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/Atm128AlarmC.nc" name="HplAtm128Timer" provided="0" ref="0x407d4c20">
+      <component-ref nicename="tos.chips.atm128.timer.Atm128AlarmC" qname="AlarmOne16C.NAlarm"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="HplAtm128Timer" ref="0x407d4c20" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Timer" qname="HplAtm128Timer"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="off" ref="0x407d2690" scoped=""/>
+        <function-ref name="test" ref="0x407d21a0" scoped=""/>
+        <function-ref name="get" ref="0x407d3278" scoped=""/>
+        <function-ref name="setScale" ref="0x407d2908" scoped=""/>
+        <function-ref name="getScale" ref="0x407d2ba8" scoped=""/>
+        <function-ref name="reset" ref="0x407d3a08" scoped=""/>
+        <function-ref name="overflow" ref="0x407d3790" scoped=""/>
+        <function-ref name="isOn" ref="0x407d2418" scoped=""/>
+        <function-ref name="set" ref="0x407d34f0" scoped=""/>
+        <function-ref name="start" ref="0x407d3c80" scoped=""/>
+        <function-ref name="stop" ref="0x407d3ef8" scoped=""/>
+      </interface-functions>
+    </interface><component loc="41:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc" nicename="tos.chips.atm128.timer.HplAtm128Timer1C" qname="HplAtm128Timer1C">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc">
+        <short>
+ HPL interface to Atmega128 timer 1.</short>
+        <long>
+ HPL interface to Atmega128 timer 1.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="56:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc">
+          <from><interface-ref name="TimerCtrl" ref="0x406fb9b0" scoped=""/></from>
+          <to><interface-ref name="TimerCtrl" ref="0x40751e78" scoped=""/></to>
+        </wire>
+        <wire loc="57:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc">
+          <from><interface-ref name="Capture" ref="0x406f6770" scoped=""/></from>
+          <to><interface-ref name="Capture" ref="0x4074fb88" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc">
+          <from><interface-ref name="Timer" ref="0x406eeaa0" scoped=""/></from>
+          <to><interface-ref name="Timer" ref="0x40702b78" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc">
+          <from><interface-ref name="Compare" ref="0x406f42f0" scoped=""/>
+          <arguments>
+            <value cst="I:0">
+              <type-int alignment="I:1" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="CompareA" ref="0x4074da80" scoped=""/></to>
+        </wire>
+        <wire loc="60:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc">
+          <from><interface-ref name="Compare" ref="0x406f42f0" scoped=""/>
+          <arguments>
+            <value cst="I:1">
+              <type-int alignment="I:1" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="CompareB" ref="0x407606a0" scoped=""/></to>
+        </wire>
+        <wire loc="61:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc">
+          <from><interface-ref name="Compare" ref="0x406f42f0" scoped=""/>
+          <arguments>
+            <value cst="I:2">
+              <type-int alignment="I:1" cname="int" size="I:2"/>
+            </value>
+          </arguments>
+          </from>
+          <to><interface-ref name="CompareC" ref="0x4075e340" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer1C.nc">
+          <from><interface-ref name="Timer0Ctrl" ref="0x4075ce98" scoped=""/></from>
+          <to><interface-ref name="TimerCtrl" ref="0x40711e18" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component abstract="" loc="51(AlarmOne16C.NAlarm):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/Atm128AlarmC.nc" nicename="tos.chips.atm128.timer.Atm128AlarmC" qname="AlarmOne16C.NAlarm">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/Atm128AlarmC.nc">
+        <short>
+ Build a TEP102 Alarm from an Atmega128 hardware timer and one of its
+ compare registers.</short>
+        <long>
+ Build a TEP102 Alarm from an Atmega128 hardware timer and one of its
+ compare registers.
+ @param frequency_tag The frequency tag for this Alarm
+ @param timer_size The width of this Alarm
+ @param mindt The shortest time in the future this Alarm can be set
+   (in its own time units). Has to be at least 2, as setting a compare
+   register one above the current counter value is unreliable. Has to be
+   large enough that the Alarm time does not pass between the computation
+   of &lt;code&gt;expires&lt;/code&gt; and actually setting the compare register.
+   Check this (for high-frequency timers) by inspecting the generated
+   assembly code...
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;david.e.gay@intel.com&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.chips.atm128.timer.Atm128AlarmC" qname="Atm128AlarmC"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+          <value cst="I:3">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component></referenced></component>

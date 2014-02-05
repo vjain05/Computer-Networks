@@ -1,0 +1,1005 @@
+<?xml version="1.0" ?><component loc="42:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc" nicename="tos.chips.cc2420.csma.CC2420CsmaC" qname="CC2420CsmaC">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+        <short>
+ Basic implementation of a CSMA MAC for the ChipCon CC2420 radio.</short>
+        <long>
+ Basic implementation of a CSMA MAC for the ChipCon CC2420 radio.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision: 1.2 $ $Date: 2008-05-14 21:33:07 $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="SplitControl" ref="0x40618ae8" scoped=""/></from>
+          <to><interface-ref name="SplitControl" ref="0x40612bf0" scoped=""/></to>
+        </wire>
+        <wire loc="54:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="RadioBackoff" ref="0x40614c58" scoped=""/></from>
+          <to><interface-ref name="RadioBackoff" ref="0x406219b8" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="Send" ref="0x406141a0" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x40621280" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="Receive" ref="0x406148a0" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40ad7298" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="Resource" ref="0x406201c8" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x4065b8f8" scoped=""/></to>
+        </wire>
+        <wire loc="60:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="CC2420Power" ref="0x4061b308" scoped=""/></from>
+          <to><interface-ref name="CC2420Power" ref="0x40669a40" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="SubControl" ref="0x4061ad18" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x40ada848" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="SubControl" ref="0x4061ad18" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x40a55c18" scoped=""/></to>
+        </wire>
+        <wire loc="64:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="CC2420Transmit" ref="0x40627328" scoped=""/></from>
+          <to><interface-ref name="CC2420Transmit" ref="0x40a520f0" scoped=""/></to>
+        </wire>
+        <wire loc="65:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="SubBackoff" ref="0x40627ae8" scoped=""/></from>
+          <to><interface-ref name="RadioBackoff" ref="0x40a52808" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x4062a730" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40b1fbb0" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x4062eec0" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x40b1caa0" scoped=""/></to>
+        </wire>
+        <wire loc="76:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="Random" ref="0x40619370" scoped=""/></from>
+          <to><interface-ref name="Random" ref="0x40c35978" scoped=""/></to>
+        </wire>
+        <wire loc="79:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="SplitControlState" ref="0x4062b758" scoped=""/></from>
+          <to><interface-ref name="State" ref="0x40c38608" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc">
+          <from><interface-ref name="Leds" ref="0x406329e0" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x409c2060" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc" name="SplitControl" provided="1" ref="0x40618ae8">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaC" qname="CC2420CsmaC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SplitControl" ref="0x40618ae8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x40618cc0" scoped=""/>
+        <function-ref name="stopDone" ref="0x40618da0" scoped=""/>
+        <function-ref name="start" ref="0x40618e80" scoped=""/>
+        <function-ref name="stop" ref="0x40614010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc" name="RadioBackoff" provided="1" ref="0x40614c58">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaC" qname="CC2420CsmaC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioBackoff" ref="0x40614c58" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.RadioBackoff" qname="RadioBackoff"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestCca" ref="0x40614e30" scoped=""/>
+        <function-ref name="requestInitialBackoff" ref="0x40614f10" scoped=""/>
+        <function-ref name="setCongestionBackoff" ref="0x40612010" scoped=""/>
+        <function-ref name="setInitialBackoff" ref="0x406120f0" scoped=""/>
+        <function-ref name="setCca" ref="0x406121d0" scoped=""/>
+        <function-ref name="requestCongestionBackoff" ref="0x406122b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc" name="Send" provided="1" ref="0x406141a0">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaC" qname="CC2420CsmaC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x406141a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40614378" scoped=""/>
+        <function-ref name="getPayload" ref="0x40614458" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40614538" scoped=""/>
+        <function-ref name="cancel" ref="0x40614618" scoped=""/>
+        <function-ref name="sendDone" ref="0x406146f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaC.nc" name="Receive" provided="1" ref="0x406148a0">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaC" qname="CC2420CsmaC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Receive" ref="0x406148a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40614a78" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="43:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="Receive" provided="1" ref="0x40ad7298">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveC" qname="CC2420ReceiveC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Receive" ref="0x40ad7298" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40ad7470" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/system/StateC.nc" name="State" provided="1" ref="0x40c38608">
+      <component-ref nicename="tos.system.StateC" qname="CC2420CsmaC.StateC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="State" ref="0x40c38608" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.State" qname="State"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getState" ref="0x40c387e0" scoped=""/>
+        <function-ref name="toIdle" ref="0x40c388c0" scoped=""/>
+        <function-ref name="isState" ref="0x40c389a0" scoped=""/>
+        <function-ref name="isIdle" ref="0x40c38a80" scoped=""/>
+        <function-ref name="requestState" ref="0x40c38b60" scoped=""/>
+        <function-ref name="forceState" ref="0x40c38c40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc" name="RadioBackoff" provided="1" ref="0x40a52808">
+      <component-ref nicename="tos.chips.cc2420.transmit.CC2420TransmitC" qname="CC2420TransmitC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioBackoff" ref="0x40a52808" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.RadioBackoff" qname="RadioBackoff"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestCca" ref="0x40a529e0" scoped=""/>
+        <function-ref name="requestInitialBackoff" ref="0x40a52ac0" scoped=""/>
+        <function-ref name="setCongestionBackoff" ref="0x40a52ba0" scoped=""/>
+        <function-ref name="setInitialBackoff" ref="0x40a52c80" scoped=""/>
+        <function-ref name="setCca" ref="0x40a52d60" scoped=""/>
+        <function-ref name="requestCongestionBackoff" ref="0x40a52e40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc" name="CC2420Power" provided="1" ref="0x40669a40">
+      <component-ref nicename="tos.chips.cc2420.control.CC2420ControlC" qname="CC2420ControlC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420Power" ref="0x40669a40" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Power" qname="CC2420Power"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startOscillator" ref="0x40669c18" scoped=""/>
+        <function-ref name="rfOff" ref="0x40669cf8" scoped=""/>
+        <function-ref name="rxOn" ref="0x40669dd8" scoped=""/>
+        <function-ref name="startVReg" ref="0x40669eb8" scoped=""/>
+        <function-ref name="stopVReg" ref="0x40661010" scoped=""/>
+        <function-ref name="startOscillatorDone" ref="0x406610f0" scoped=""/>
+        <function-ref name="stopOscillator" ref="0x406611d0" scoped=""/>
+        <function-ref name="startVRegDone" ref="0x406612b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc" name="StdControl" provided="1" ref="0x40a55c18">
+      <component-ref nicename="tos.chips.cc2420.transmit.CC2420TransmitC" qname="CC2420TransmitC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="StdControl" ref="0x40a55c18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x40a55df0" scoped=""/>
+        <function-ref name="stop" ref="0x40a55ed0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/system/RandomC.nc" name="Random" provided="1" ref="0x40c35978">
+      <component-ref nicename="tos.system.RandomC" qname="RandomC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Random" ref="0x40c35978" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rand16" ref="0x40c35b50" scoped=""/>
+        <function-ref name="rand32" ref="0x40c35c30" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="Random" provided="0" ref="0x40619370">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Random" ref="0x40619370" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rand16" ref="0x40619548" scoped=""/>
+        <function-ref name="rand32" ref="0x40619628" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="SubBackoff" provided="0" ref="0x40627ae8">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubBackoff" ref="0x40627ae8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.RadioBackoff" qname="RadioBackoff"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestCca" ref="0x40627cc0" scoped=""/>
+        <function-ref name="requestInitialBackoff" ref="0x40627da0" scoped=""/>
+        <function-ref name="setCongestionBackoff" ref="0x40627e80" scoped=""/>
+        <function-ref name="setInitialBackoff" ref="0x40619010" scoped=""/>
+        <function-ref name="setCca" ref="0x406190f0" scoped=""/>
+        <function-ref name="requestCongestionBackoff" ref="0x406191d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="CC2420Transmit" provided="0" ref="0x40627328">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420Transmit" ref="0x40627328" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Transmit" qname="CC2420Transmit"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40627500" scoped=""/>
+        <function-ref name="cancel" ref="0x406275e0" scoped=""/>
+        <function-ref name="modify" ref="0x406276c0" scoped=""/>
+        <function-ref name="sendDone" ref="0x406277a0" scoped=""/>
+        <function-ref name="resend" ref="0x40627880" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc" name="CC2420PacketBody" provided="1" ref="0x40b1caa0">
+      <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x40b1caa0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x40b1cc78" scoped=""/>
+        <function-ref name="getHeader" ref="0x40b1cd58" scoped=""/>
+        <function-ref name="getMetadata" ref="0x40b1ce38" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="CC2420PacketBody" provided="0" ref="0x4062eec0">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x4062eec0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x406310c0" scoped=""/>
+        <function-ref name="getHeader" ref="0x406311a0" scoped=""/>
+        <function-ref name="getMetadata" ref="0x40631280" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/system/LedsC.nc" name="Leds" provided="1" ref="0x409c2060">
+      <component-ref nicename="tos.system.LedsC" qname="LedsC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Leds" ref="0x409c2060" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x409c2238" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x409c2318" scoped=""/>
+        <function-ref name="led1On" ref="0x409c23f8" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x409c24d8" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x409c25b8" scoped=""/>
+        <function-ref name="get" ref="0x409c2698" scoped=""/>
+        <function-ref name="led1Off" ref="0x409c2778" scoped=""/>
+        <function-ref name="led2Off" ref="0x409c2af8" scoped=""/>
+        <function-ref name="set" ref="0x409c2858" scoped=""/>
+        <function-ref name="led0On" ref="0x409c2938" scoped=""/>
+        <function-ref name="led2On" ref="0x409c2a18" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc" name="StdControl" provided="1" ref="0x40ada848">
+      <component-ref nicename="tos.chips.cc2420.receive.CC2420ReceiveC" qname="CC2420ReceiveC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="StdControl" ref="0x40ada848" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x40adaa20" scoped=""/>
+        <function-ref name="stop" ref="0x40adab00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="Leds" provided="0" ref="0x406329e0">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Leds" ref="0x406329e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Leds" qname="Leds"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="led0Off" ref="0x40632bb8" scoped=""/>
+        <function-ref name="led0Toggle" ref="0x40632c98" scoped=""/>
+        <function-ref name="led1On" ref="0x40632d78" scoped=""/>
+        <function-ref name="led1Toggle" ref="0x40632e58" scoped=""/>
+        <function-ref name="led2Toggle" ref="0x4062a010" scoped=""/>
+        <function-ref name="get" ref="0x4062a0f0" scoped=""/>
+        <function-ref name="led1Off" ref="0x4062a1d0" scoped=""/>
+        <function-ref name="led2Off" ref="0x4062a550" scoped=""/>
+        <function-ref name="set" ref="0x4062a2b0" scoped=""/>
+        <function-ref name="led0On" ref="0x4062a390" scoped=""/>
+        <function-ref name="led2On" ref="0x4062a470" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="SubControl" provided="0" ref="0x4061ad18">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubControl" ref="0x4061ad18" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.StdControl" qname="StdControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="start" ref="0x4061aef0" scoped=""/>
+        <function-ref name="stop" ref="0x4061f010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="RadioBackoff" provided="1" ref="0x406219b8">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RadioBackoff" ref="0x406219b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.RadioBackoff" qname="RadioBackoff"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="requestCca" ref="0x40621b90" scoped=""/>
+        <function-ref name="requestInitialBackoff" ref="0x40621c70" scoped=""/>
+        <function-ref name="setCongestionBackoff" ref="0x40621d50" scoped=""/>
+        <function-ref name="setInitialBackoff" ref="0x40621e30" scoped=""/>
+        <function-ref name="setCca" ref="0x40621f10" scoped=""/>
+        <function-ref name="requestCongestionBackoff" ref="0x40620010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="CC2420Packet" provided="0" ref="0x4062a730">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420Packet" ref="0x4062a730" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x4062a908" scoped=""/>
+        <function-ref name="setNetwork" ref="0x4062a9e8" scoped=""/>
+        <function-ref name="getRssi" ref="0x4062aac8" scoped=""/>
+        <function-ref name="getNetwork" ref="0x4062aba8" scoped=""/>
+        <function-ref name="getPower" ref="0x4062ac88" scoped=""/>
+        <function-ref name="getLqi" ref="0x4062ad68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="40:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="Send" provided="1" ref="0x40621280">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Send" ref="0x40621280" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40621458" scoped=""/>
+        <function-ref name="getPayload" ref="0x40621538" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40621618" scoped=""/>
+        <function-ref name="cancel" ref="0x406216f8" scoped=""/>
+        <function-ref name="sendDone" ref="0x406217d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="39:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="SplitControl" provided="1" ref="0x40612bf0">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SplitControl" ref="0x40612bf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.SplitControl" qname="SplitControl"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startDone" ref="0x40612dc8" scoped=""/>
+        <function-ref name="stopDone" ref="0x40612ea8" scoped=""/>
+        <function-ref name="start" ref="0x40621010" scoped=""/>
+        <function-ref name="stop" ref="0x406210f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc" name="Resource" provided="1" ref="0x4065b8f8">
+      <component-ref nicename="tos.chips.cc2420.control.CC2420ControlC" qname="CC2420ControlC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Resource" ref="0x4065b8f8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x4065bad0" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x4065bbb0" scoped=""/>
+        <function-ref name="request" ref="0x4065bc90" scoped=""/>
+        <function-ref name="granted" ref="0x4065bd70" scoped=""/>
+        <function-ref name="isOwner" ref="0x4065be50" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="41:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc" name="CC2420Packet" provided="1" ref="0x40b1fbb0">
+      <component-ref nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420Packet" ref="0x40b1fbb0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x40b1fd88" scoped=""/>
+        <function-ref name="setNetwork" ref="0x40b1fe68" scoped=""/>
+        <function-ref name="getRssi" ref="0x40b1c010" scoped=""/>
+        <function-ref name="getNetwork" ref="0x40b1c0f0" scoped=""/>
+        <function-ref name="getPower" ref="0x40b1c1d0" scoped=""/>
+        <function-ref name="getLqi" ref="0x40b1c2b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="SplitControlState" provided="0" ref="0x4062b758">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SplitControlState" ref="0x4062b758" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.State" qname="State"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getState" ref="0x4062b9b0" scoped=""/>
+        <function-ref name="toIdle" ref="0x4062ba90" scoped=""/>
+        <function-ref name="isState" ref="0x4062bb70" scoped=""/>
+        <function-ref name="isIdle" ref="0x4062bc50" scoped=""/>
+        <function-ref name="requestState" ref="0x4062bd30" scoped=""/>
+        <function-ref name="forceState" ref="0x4062be10" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="Resource" provided="0" ref="0x406201c8">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Resource" ref="0x406201c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="release" ref="0x406203a0" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40620480" scoped=""/>
+        <function-ref name="request" ref="0x40620560" scoped=""/>
+        <function-ref name="granted" ref="0x40620640" scoped=""/>
+        <function-ref name="isOwner" ref="0x40620720" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" name="CC2420Power" provided="0" ref="0x4061b308">
+      <component-ref nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420Power" ref="0x4061b308" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Power" qname="CC2420Power"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="startOscillator" ref="0x4061b4e0" scoped=""/>
+        <function-ref name="rfOff" ref="0x4061b5c0" scoped=""/>
+        <function-ref name="rxOn" ref="0x4061b6a0" scoped=""/>
+        <function-ref name="startVReg" ref="0x4061b780" scoped=""/>
+        <function-ref name="stopVReg" ref="0x4061b860" scoped=""/>
+        <function-ref name="startOscillatorDone" ref="0x4061b940" scoped=""/>
+        <function-ref name="stopOscillator" ref="0x4061ba20" scoped=""/>
+        <function-ref name="startVRegDone" ref="0x4061bb00" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc" name="CC2420Transmit" provided="1" ref="0x40a520f0">
+      <component-ref nicename="tos.chips.cc2420.transmit.CC2420TransmitC" qname="CC2420TransmitC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420Transmit" ref="0x40a520f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Transmit" qname="CC2420Transmit"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40a522c8" scoped=""/>
+        <function-ref name="cancel" ref="0x40a523a8" scoped=""/>
+        <function-ref name="modify" ref="0x40a52488" scoped=""/>
+        <function-ref name="sendDone" ref="0x40a52568" scoped=""/>
+        <function-ref name="resend" ref="0x40a52648" scoped=""/>
+      </interface-functions>
+    </interface><component loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/system/LedsC.nc" nicename="tos.system.LedsC" qname="LedsC">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/system/LedsC.nc">
+        <short>
+
+ The basic TinyOS LEDs abstraction.</short>
+        <long>
+
+ The basic TinyOS LEDs abstraction.
+
+ @author Phil Buonadonna
+ @author David Gay
+ @author Philip Levis
+ @author Joe Polastre
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/system/LedsC.nc">
+          <from><interface-ref name="Leds" ref="0x409c2060" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x409df6f8" scoped=""/></to>
+        </wire>
+        <wire loc="53:/home/ubuntu/local/tinyos-2.1.1/tos/system/LedsC.nc">
+          <from><interface-ref name="Init" ref="0x409eba38" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x409df3b0" scoped=""/></to>
+        </wire>
+        <wire loc="54:/home/ubuntu/local/tinyos-2.1.1/tos/system/LedsC.nc">
+          <from><interface-ref name="Led0" ref="0x409dd400" scoped=""/></from>
+          <to><interface-ref name="Led0" ref="0x409c1bb0" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/system/LedsC.nc">
+          <from><interface-ref name="Led1" ref="0x409ddde8" scoped=""/></from>
+          <to><interface-ref name="Led1" ref="0x409ec680" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/ubuntu/local/tinyos-2.1.1/tos/system/LedsC.nc">
+          <from><interface-ref name="Led2" ref="0x409dc820" scoped=""/></from>
+          <to><interface-ref name="Led2" ref="0x409eb0b0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="43:/home/ubuntu/local/tinyos-2.1.1/tos/system/RandomC.nc" nicename="tos.system.RandomC" qname="RandomC">
+      <documentation loc="33:/home/ubuntu/local/tinyos-2.1.1/tos/system/RandomC.nc">
+        <short>
+ The standard TinyOS random number generator.</short>
+        <long>
+ The standard TinyOS random number generator. If your system requires a 
+ specific random number generator, it should wire to that component
+ directly. 
+
+ @author  Barbara Hohlt 
+ @author  Phil Levis 
+ @date    March 1 2005
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="56:/home/ubuntu/local/tinyos-2.1.1/tos/system/RandomC.nc">
+          <from><interface-ref name="Random" ref="0x40c35978" scoped=""/></from>
+          <to><interface-ref name="Random" ref="0x40c31478" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/system/RandomC.nc">
+          <from><interface-ref name="SeedInit" ref="0x40c350b8" scoped=""/></from>
+          <to><interface-ref name="SeedInit" ref="0x40c34b20" scoped=""/></to>
+        </wire>
+        <wire loc="54:/home/ubuntu/local/tinyos-2.1.1/tos/system/RandomC.nc">
+          <from><interface-ref name="Init" ref="0x40c39e38" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40c34600" scoped=""/></to>
+        </wire>
+        <wire loc="52:/home/ubuntu/local/tinyos-2.1.1/tos/system/RandomC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x403f6358" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40c34600" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="39:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc" nicename="tos.chips.cc2420.receive.CC2420ReceiveC" qname="CC2420ReceiveC">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+        <short>
+ Implementation of the receive path for the ChipCon CC2420 radio.</short>
+        <long>
+ Implementation of the receive path for the ChipCon CC2420 radio.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision: 1.4 $ $Date: 2009-08-14 20:33:43 $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="62:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="CC2420Receive" ref="0x40adace8" scoped=""/></from>
+          <to><interface-ref name="CC2420Receive" ref="0x40ad4c70" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="Receive" ref="0x40ad7298" scoped=""/></from>
+          <to><interface-ref name="Receive" ref="0x40ad31c0" scoped=""/></to>
+        </wire>
+        <wire loc="64:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="PacketIndicator" ref="0x40ad7730" scoped=""/></from>
+          <to><interface-ref name="PacketIndicator" ref="0x40ad3658" scoped=""/></to>
+        </wire>
+        <wire loc="61:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="StdControl" ref="0x40ada848" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x40ad47d0" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="Leds" ref="0x40aec838" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x409c2060" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x403f6358" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40ad4430" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="CSN" ref="0x40ad3a30" scoped=""/></from>
+          <to><interface-ref name="CSN" ref="0x40827c48" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="FIFO" ref="0x40ad24c0" scoped=""/></from>
+          <to><interface-ref name="FIFO" ref="0x40826660" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="FIFOP" ref="0x40ad2ed0" scoped=""/></from>
+          <to><interface-ref name="FIFOP" ref="0x40825068" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="InterruptFIFOP" ref="0x40af5978" scoped=""/></from>
+          <to><interface-ref name="InterruptFIFOP" ref="0x40836618" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="SpiResource" ref="0x40af30a0" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40b1de50" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="RXFIFO" ref="0x40af3820" scoped=""/></from>
+          <to><interface-ref name="RXFIFO" ref="0x40c225c8" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="SFLUSHRX" ref="0x40af2440" scoped=""/></from>
+          <to><interface-ref name="SFLUSHRX" ref="0x40c2e5b8" scoped=""/></to>
+        </wire>
+        <wire loc="75:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="SACK" ref="0x40af2010" scoped=""/></from>
+          <to><interface-ref name="SACK" ref="0x40c2ec68" scoped=""/></to>
+        </wire>
+        <wire loc="76:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x40af2878" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40b1fbb0" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x40af1108" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x40b1caa0" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="PacketTimeStamp" ref="0x40af0980" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40b1b6b8" scoped=""/></to>
+        </wire>
+        <wire loc="79:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="CC2420Config" ref="0x40af1680" scoped=""/></from>
+          <to><interface-ref name="CC2420Config" ref="0x40662930" scoped=""/></to>
+        </wire>
+        <wire loc="81:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="SECCTRL0" ref="0x40aee580" scoped=""/></from>
+          <to><interface-ref name="SECCTRL0" ref="0x40c2a5c8" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="SECCTRL1" ref="0x40aeeaa0" scoped=""/></from>
+          <to><interface-ref name="SECCTRL1" ref="0x40c2aa00" scoped=""/></to>
+        </wire>
+        <wire loc="83:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="SRXDEC" ref="0x40aee140" scoped=""/></from>
+          <to><interface-ref name="SRXDEC" ref="0x40c2d3d8" scoped=""/></to>
+        </wire>
+        <wire loc="84:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="RXNONCE" ref="0x40aed9b8" scoped=""/></from>
+          <to><interface-ref name="RXNONCE" ref="0x40c22190" scoped=""/></to>
+        </wire>
+        <wire loc="85:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="KEY0" ref="0x40aed010" scoped=""/></from>
+          <to><interface-ref name="KEY0" ref="0x40c24010" scoped=""/></to>
+        </wire>
+        <wire loc="86:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="KEY1" ref="0x40aed4d8" scoped=""/></from>
+          <to><interface-ref name="KEY1" ref="0x40c24448" scoped=""/></to>
+        </wire>
+        <wire loc="87:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="RXFIFO_RAM" ref="0x40aedeb8" scoped=""/></from>
+          <to><interface-ref name="RXFIFO_RAM" ref="0x40c25b20" scoped=""/></to>
+        </wire>
+        <wire loc="88:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/receive/CC2420ReceiveC.nc">
+          <from><interface-ref name="SNOP" ref="0x40aec3d0" scoped=""/></from>
+          <to><interface-ref name="SNOP" ref="0x40c07a48" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="41:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc" nicename="tos.chips.cc2420.transmit.CC2420TransmitC" qname="CC2420TransmitC">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+        <short>
+ Implementation of the transmit path for the ChipCon CC2420 radio.</short>
+        <long>
+ Implementation of the transmit path for the ChipCon CC2420 radio.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision: 1.3 $ $Date: 2009-08-14 20:33:43 $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="57:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="RadioBackoff" ref="0x40a52808" scoped=""/></from>
+          <to><interface-ref name="RadioBackoff" ref="0x40a5d570" scoped=""/></to>
+        </wire>
+        <wire loc="58:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="EnergyIndicator" ref="0x40a518e8" scoped=""/></from>
+          <to><interface-ref name="EnergyIndicator" ref="0x40a5de68" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="CC2420Transmit" ref="0x40a520f0" scoped=""/></from>
+          <to><interface-ref name="Send" ref="0x40a5ed88" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="StdControl" ref="0x40a55c18" scoped=""/></from>
+          <to><interface-ref name="StdControl" ref="0x40a5e890" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="ByteIndicator" ref="0x40a51d50" scoped=""/></from>
+          <to><interface-ref name="ByteIndicator" ref="0x40a5c300" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x403f6358" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x406ce828" scoped=""/></to>
+        </wire>
+        <wire loc="62:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x403f6358" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40a5e4f0" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="BackoffTimer" ref="0x40a5c8c8" scoped=""/></from>
+          <to><interface-ref name="Alarm32khz32" ref="0x406cedf0" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="CCA" ref="0x40a71eb8" scoped=""/></from>
+          <to><interface-ref name="CCA" ref="0x40827270" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="CSN" ref="0x40a779a8" scoped=""/></from>
+          <to><interface-ref name="CSN" ref="0x40827c48" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="SFD" ref="0x40a763d0" scoped=""/></from>
+          <to><interface-ref name="SFD" ref="0x40824490" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="CaptureSFD" ref="0x40a71840" scoped=""/></from>
+          <to><interface-ref name="CaptureSFD" ref="0x408357f0" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="SpiResource" ref="0x40a76e10" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40acb950" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="ChipSpiResource" ref="0x40a72588" scoped=""/></from>
+          <to><interface-ref name="ChipSpiResource" ref="0x40aca030" scoped=""/></to>
+        </wire>
+        <wire loc="79:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="SNOP" ref="0x40a70d28" scoped=""/></from>
+          <to><interface-ref name="SNOP" ref="0x40aca548" scoped=""/></to>
+        </wire>
+        <wire loc="80:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="STXON" ref="0x40a6f168" scoped=""/></from>
+          <to><interface-ref name="STXON" ref="0x40ac9368" scoped=""/></to>
+        </wire>
+        <wire loc="81:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="STXONCCA" ref="0x40a6f598" scoped=""/></from>
+          <to><interface-ref name="STXONCCA" ref="0x40ac96c0" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="SFLUSHTX" ref="0x40a6f9c8" scoped=""/></from>
+          <to><interface-ref name="SFLUSHTX" ref="0x40ac84e8" scoped=""/></to>
+        </wire>
+        <wire loc="83:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="TXCTRL" ref="0x40a70840" scoped=""/></from>
+          <to><interface-ref name="TXCTRL" ref="0x40ac4010" scoped=""/></to>
+        </wire>
+        <wire loc="84:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="TXFIFO" ref="0x40a72b48" scoped=""/></from>
+          <to><interface-ref name="TXFIFO" ref="0x40ae0a68" scoped=""/></to>
+        </wire>
+        <wire loc="85:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="TXFIFO_RAM" ref="0x40a70338" scoped=""/></from>
+          <to><interface-ref name="TXFIFO_RAM" ref="0x40ae22b0" scoped=""/></to>
+        </wire>
+        <wire loc="86:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="MDMCTRL1" ref="0x40a6fe08" scoped=""/></from>
+          <to><interface-ref name="MDMCTRL1" ref="0x40ac52b0" scoped=""/></to>
+        </wire>
+        <wire loc="87:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="SECCTRL0" ref="0x40a6e850" scoped=""/></from>
+          <to><interface-ref name="SECCTRL0" ref="0x40ac3270" scoped=""/></to>
+        </wire>
+        <wire loc="88:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="SECCTRL1" ref="0x40a6ed70" scoped=""/></from>
+          <to><interface-ref name="SECCTRL1" ref="0x40ac36a8" scoped=""/></to>
+        </wire>
+        <wire loc="89:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="STXENC" ref="0x40a6e410" scoped=""/></from>
+          <to><interface-ref name="STXENC" ref="0x40ac7368" scoped=""/></to>
+        </wire>
+        <wire loc="90:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="TXNONCE" ref="0x40a6dca8" scoped=""/></from>
+          <to><interface-ref name="TXNONCE" ref="0x40ae1880" scoped=""/></to>
+        </wire>
+        <wire loc="91:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="KEY0" ref="0x40a6d300" scoped=""/></from>
+          <to><interface-ref name="KEY0" ref="0x40ae2b20" scoped=""/></to>
+        </wire>
+        <wire loc="92:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="KEY1" ref="0x40a6d7c8" scoped=""/></from>
+          <to><interface-ref name="KEY1" ref="0x40ae1010" scoped=""/></to>
+        </wire>
+        <wire loc="95:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="CC2420Receive" ref="0x40a69a60" scoped=""/></from>
+          <to><interface-ref name="CC2420Receive" ref="0x40adace8" scoped=""/></to>
+        </wire>
+        <wire loc="98:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x40a592f8" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40b1fbb0" scoped=""/></to>
+        </wire>
+        <wire loc="99:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x40a59b38" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x40b1caa0" scoped=""/></to>
+        </wire>
+        <wire loc="100:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="PacketTimeStamp" ref="0x40a582b0" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40b1b6b8" scoped=""/></to>
+        </wire>
+        <wire loc="101:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="PacketTimeSyncOffset" ref="0x40a71170" scoped=""/></from>
+          <to><interface-ref name="PacketTimeSyncOffset" ref="0x40b3d888" scoped=""/></to>
+        </wire>
+        <wire loc="104:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/transmit/CC2420TransmitC.nc">
+          <from><interface-ref name="Leds" ref="0x40a6b010" scoped=""/></from>
+          <to><interface-ref name="Leds" ref="0x409c2060" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="38:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc" nicename="tos.chips.cc2420.packet.CC2420PacketC" qname="CC2420PacketC">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+        <short>
+ </short>
+        <long>
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @author David Moss
+ @author Chad Metcalf
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="58:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="LinkPacketMetadata" ref="0x40b1b060" scoped=""/></from>
+          <to><interface-ref name="LinkPacketMetadata" ref="0x40b39a48" scoped=""/></to>
+        </wire>
+        <wire loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="CC2420Packet" ref="0x40b1fbb0" scoped=""/></from>
+          <to><interface-ref name="CC2420Packet" ref="0x40b3c678" scoped=""/></to>
+        </wire>
+        <wire loc="59:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeStamp32khz" ref="0x40b1b6b8" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStamp32khz" ref="0x40b38100" scoped=""/></to>
+        </wire>
+        <wire loc="57:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="CC2420PacketBody" ref="0x40b1caa0" scoped=""/></from>
+          <to><interface-ref name="CC2420PacketBody" ref="0x40b394b8" scoped=""/></to>
+        </wire>
+        <wire loc="61:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeSyncOffset" ref="0x40b3d888" scoped=""/></from>
+          <to><interface-ref name="PacketTimeSyncOffset" ref="0x40b34308" scoped=""/></to>
+        </wire>
+        <wire loc="60:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="PacketTimeStampMilli" ref="0x40b3f100" scoped=""/></from>
+          <to><interface-ref name="PacketTimeStampMilli" ref="0x40b37af8" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="Acks" ref="0x40b1c520" scoped=""/></from>
+          <to><interface-ref name="Acks" ref="0x40b3cf20" scoped=""/></to>
+        </wire>
+        <wire loc="64:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="Counter" ref="0x40b76a38" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x407df010" scoped=""/></to>
+        </wire>
+        <wire loc="65:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="LocalTime32khz" ref="0x40b33e90" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x40b760a0" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/packet/CC2420PacketC.nc">
+          <from><interface-ref name="LocalTimeMilli" ref="0x40b32908" scoped=""/></from>
+          <to><interface-ref name="LocalTime" ref="0x40b69620" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="65(CC2420CsmaC.StateC):/home/ubuntu/local/tinyos-2.1.1/tos/system/StateC.nc" nicename="tos.system.StateC" qname="CC2420CsmaC.StateC">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/types/State.h">
+        <short>
+ </short>
+        <long>
+ @author David Moss
+</long>
+      </documentation>
+      <instance number="1">
+        <component-ref nicename="tos.system.StateC" qname="StateC"/>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="74:/home/ubuntu/local/tinyos-2.1.1/tos/system/StateC.nc">
+          <from><interface-ref name="State" ref="0x40c38608" scoped=""/></from>
+          <to><interface-ref name="State" ref="0x408ec7a0" scoped=""/>
+          <arguments>
+            <value cst="I:1">
+              <type-int alignment="I:1" cname="unsigned int" size="I:2" unsigned=""/>
+            </value>
+          </arguments>
+          </to>
+        </wire>
+      </wiring>
+    </component><component loc="37:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc" nicename="tos.chips.cc2420.csma.CC2420CsmaP" qname="CC2420CsmaP" safe="">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/csma/CC2420CsmaP.nc">
+        <short>
+ </short>
+        <long>
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision: 1.12 $ $Date: 2009/09/17 23:36:36 $
+</long>
+      </documentation>
+      <module/>
+    </component><component loc="42:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc" nicename="tos.chips.cc2420.control.CC2420ControlC" qname="CC2420ControlC">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+        <short>
+ Implementation for configuring a ChipCon CC2420 radio.</short>
+        <long>
+ Implementation for configuring a ChipCon CC2420 radio.
+
+ @author Jonathan Hui &lt;jhui@archrock.com&gt;
+ @version $Revision: 1.3 $ $Date: 2008/05/14 21:33:07 $
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="CC2420Config" ref="0x40662930" scoped=""/></from>
+          <to><interface-ref name="CC2420Config" ref="0x4066e798" scoped=""/></to>
+        </wire>
+        <wire loc="57:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="ReadRssi" ref="0x40670900" scoped=""/></from>
+          <to><interface-ref name="ReadRssi" ref="0x4066c3e0" scoped=""/></to>
+        </wire>
+        <wire loc="56:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="CC2420Power" ref="0x40669a40" scoped=""/></from>
+          <to><interface-ref name="CC2420Power" ref="0x4066d880" scoped=""/></to>
+        </wire>
+        <wire loc="54:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="Resource" ref="0x4065b8f8" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x4066e060" scoped=""/></to>
+        </wire>
+        <wire loc="60:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SoftwareInit" ref="0x403f6358" scoped=""/></from>
+          <to><interface-ref name="Init" ref="0x40672ca8" scoped=""/></to>
+        </wire>
+        <wire loc="63:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="StartupTimer" ref="0x4066a1c8" scoped=""/></from>
+          <to><interface-ref name="Alarm32khz32" ref="0x406cedf0" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="CSN" ref="0x4067bbd8" scoped=""/></from>
+          <to><interface-ref name="CSN" ref="0x40827c48" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="RSTN" ref="0x40675680" scoped=""/></from>
+          <to><interface-ref name="RSTN" ref="0x40825a50" scoped=""/></to>
+        </wire>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="VREN" ref="0x406740b0" scoped=""/></from>
+          <to><interface-ref name="VREN" ref="0x40824e78" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="InterruptCCA" ref="0x406831d8" scoped=""/></from>
+          <to><interface-ref name="InterruptCCA" ref="0x40835ef0" scoped=""/></to>
+        </wire>
+        <wire loc="74:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SpiResource" ref="0x4068da98" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x409fa918" scoped=""/></to>
+        </wire>
+        <wire loc="75:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SRXON" ref="0x4068e8d0" scoped=""/></from>
+          <to><interface-ref name="SRXON" ref="0x409f8010" scoped=""/></to>
+        </wire>
+        <wire loc="76:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SRFOFF" ref="0x4068ece8" scoped=""/></from>
+          <to><interface-ref name="SRFOFF" ref="0x409f8a18" scoped=""/></to>
+        </wire>
+        <wire loc="77:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SXOSCON" ref="0x4068d678" scoped=""/></from>
+          <to><interface-ref name="SXOSCON" ref="0x409f9880" scoped=""/></to>
+        </wire>
+        <wire loc="78:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SXOSCOFF" ref="0x4068d158" scoped=""/></from>
+          <to><interface-ref name="SXOSCOFF" ref="0x409f8d70" scoped=""/></to>
+        </wire>
+        <wire loc="79:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="FSCTRL" ref="0x4068f5c0" scoped=""/></from>
+          <to><interface-ref name="FSCTRL" ref="0x409f3db8" scoped=""/></to>
+        </wire>
+        <wire loc="80:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="IOCFG0" ref="0x4068fac8" scoped=""/></from>
+          <to><interface-ref name="IOCFG0" ref="0x409f2f18" scoped=""/></to>
+        </wire>
+        <wire loc="81:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="IOCFG1" ref="0x40685010" scoped=""/></from>
+          <to><interface-ref name="IOCFG1" ref="0x40a11368" scoped=""/></to>
+        </wire>
+        <wire loc="82:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="MDMCTRL0" ref="0x40685530" scoped=""/></from>
+          <to><interface-ref name="MDMCTRL0" ref="0x409f5e50" scoped=""/></to>
+        </wire>
+        <wire loc="83:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="MDMCTRL1" ref="0x40685a50" scoped=""/></from>
+          <to><interface-ref name="MDMCTRL1" ref="0x409f42b0" scoped=""/></to>
+        </wire>
+        <wire loc="84:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="PANID" ref="0x4067ddc8" scoped=""/></from>
+          <to><interface-ref name="PANID" ref="0x40a0fa00" scoped=""/></to>
+        </wire>
+        <wire loc="85:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="IEEEADR" ref="0x4067d878" scoped=""/></from>
+          <to><interface-ref name="IEEEADR" ref="0x40a0f5c8" scoped=""/></to>
+        </wire>
+        <wire loc="86:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="RXCTRL1" ref="0x4067c010" scoped=""/></from>
+          <to><interface-ref name="RXCTRL1" ref="0x409f3880" scoped=""/></to>
+        </wire>
+        <wire loc="87:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="RSSI" ref="0x4067c508" scoped=""/></from>
+          <to><interface-ref name="RSSI" ref="0x409f46e8" scoped=""/></to>
+        </wire>
+        <wire loc="88:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="TXCTRL" ref="0x4067ca10" scoped=""/></from>
+          <to><interface-ref name="TXCTRL" ref="0x409f3010" scoped=""/></to>
+        </wire>
+        <wire loc="91:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="SyncResource" ref="0x4068ca18" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40a055c0" scoped=""/></to>
+        </wire>
+        <wire loc="94:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="RssiResource" ref="0x4068c268" scoped=""/></from>
+          <to><interface-ref name="Resource" ref="0x40a14010" scoped=""/></to>
+        </wire>
+        <wire loc="97:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="ActiveMessageAddress" ref="0x406811f8" scoped=""/></from>
+          <to><interface-ref name="ActiveMessageAddress" ref="0x40a23978" scoped=""/></to>
+        </wire>
+        <wire loc="100:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/control/CC2420ControlC.nc">
+          <from><interface-ref name="LocalIeeeEui64" ref="0x4066b828" scoped=""/></from>
+          <to><interface-ref name="LocalIeeeEui64" ref="0x40a391f8" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

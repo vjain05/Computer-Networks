@@ -1,0 +1,30 @@
+<?xml version="1.0" ?><interfacedef loc="3:lib/interfaces/SimpleSend.nc" nicename="lib.interfaces.SimpleSend" qname="SimpleSend">
+      <function command="" loc="4:lib/interfaces/SimpleSend.nc" name="send" provided="0" ref="0x40d4c7e8">
+        <interfacedef-ref nicename="lib.interfaces.SimpleSend" qname="SimpleSend"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="error_t" ref="0x40350748"/></typename>
+          </type-int>
+          <function-parameters>
+            <type-tag alignment="I:1" size="I:64"><nx_struct-ref name="pack" ref="0x4051d6d0"/>
+              <typename><typedef-ref name="pack" ref="0x4051c3a8"/></typename>
+            </type-tag>
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="4:lib/interfaces/SimpleSend.nc" name="msg" ref="0x40d4c488">
+            <type-tag alignment="I:1" size="I:64"><nx_struct-ref name="pack" ref="0x4051d6d0"/>
+              <typename><typedef-ref name="pack" ref="0x4051c3a8"/></typename>
+            </type-tag>
+          </variable>
+          <variable loc="4:lib/interfaces/SimpleSend.nc" name="dest" ref="0x40d4c688">
+            <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+              <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>

@@ -1,0 +1,8 @@
+digraph "lib.modules.AppyC" {
+  n0x40e91c50 [shape=ellipse, style=filled, label="Appy", fontsize=12];
+  "AppyP" [fontsize=12, shape=box, URL="../chtml/lib.modules.AppyP.html"];
+  "AppyP" [fontsize=12, shape=box, URL="../chtml/lib.modules.AppyP.html"];
+  "TransportC" [fontsize=12, shape=box,peripheries=2, URL="../chtml/lib.modules.TransportC.html"];
+  "n0x40e91c50" -> "AppyP" [label="Appy", URL="../ihtml/lib.interfaces.Appy.html", fontsize=10];
+  "AppyP" -> "TransportC" [label="Transport", URL="../ihtml/lib.interfaces.Transport.html", fontsize=10];
+}

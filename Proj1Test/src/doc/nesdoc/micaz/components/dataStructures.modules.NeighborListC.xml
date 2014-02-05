@@ -1,0 +1,66 @@
+<?xml version="1.0" ?><component abstract="" loc="2:dataStructures/modules/NeighborListC.nc" nicename="dataStructures.modules.NeighborListC" qname="NeighborListC">
+      <parameters>
+        <constant loc="2:dataStructures/modules/NeighborListC.nc" name="n" ref="0x40d88010">
+          <component-ref nicename="dataStructures.modules.NeighborListC" qname="NeighborListC"/>
+          <type-int alignment="I:1" cname="int" size="I:2"/>
+        </constant>
+      </parameters>
+      <module/>
+    <specification><interface loc="3:dataStructures/modules/NeighborListC.nc" name="NeighborList" provided="1" ref="0x40d882c8">
+      <component-ref nicename="dataStructures.modules.NeighborListC" qname="NeighborListC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="NeighborList" ref="0x40d882c8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="dataStructures.interfaces.NeighborList" qname="NeighborList"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clearAll" ref="0x40d884a0" scoped=""/>
+        <function-ref name="costFromDest" ref="0x40d88580" scoped=""/>
+        <function-ref name="neighborsContains" ref="0x40d88660" scoped=""/>
+        <function-ref name="refreshNeighbors" ref="0x40d88740" scoped=""/>
+        <function-ref name="front" ref="0x40d88820" scoped=""/>
+        <function-ref name="isEmpty" ref="0x40d88900" scoped=""/>
+        <function-ref name="get" ref="0x40d889e0" scoped=""/>
+        <function-ref name="incrementANeighbor" ref="0x40d88ac0" scoped=""/>
+        <function-ref name="printNeighbors" ref="0x40d88ba0" scoped=""/>
+        <function-ref name="refreshRoutingT" ref="0x40d88c80" scoped=""/>
+        <function-ref name="writeToPayloadFromRoutingTable" ref="0x40d88d60" scoped=""/>
+        <function-ref name="getRTsize" ref="0x40d88e40" scoped=""/>
+        <function-ref name="delete" ref="0x40d88f20" scoped=""/>
+        <function-ref name="pushbackToRoutingTable" ref="0x40d87098" scoped=""/>
+        <function-ref name="nextHopFromDest" ref="0x40d87178" scoped=""/>
+        <function-ref name="printRoutingTable" ref="0x40d87258" scoped=""/>
+        <function-ref name="decrementNeighborPing" ref="0x40d87338" scoped=""/>
+        <function-ref name="back" ref="0x40d87418" scoped=""/>
+        <function-ref name="updateRoutingTable" ref="0x40d874f8" scoped=""/>
+        <function-ref name="pushback" ref="0x40d875d8" scoped=""/>
+        <function-ref name="resetNeighborCounters" ref="0x40d876b8" scoped=""/>
+        <function-ref name="popfront" ref="0x40d87798" scoped=""/>
+        <function-ref name="popback" ref="0x40d87878" scoped=""/>
+        <function-ref name="set" ref="0x40d87958" scoped=""/>
+        <function-ref name="populateRoutingTable" ref="0x40d87a38" scoped=""/>
+        <function-ref name="pushfront" ref="0x40d87c18" scoped=""/>
+        <function-ref name="deleteNeighbor" ref="0x40d87cf8" scoped=""/>
+        <function-ref name="size" ref="0x40d87dd8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="4:dataStructures/modules/NeighborListC.nc" name="RT" provided="0" ref="0x40d7e400">
+      <component-ref nicename="dataStructures.modules.NeighborListC" qname="NeighborListC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="RT" ref="0x40d7e400" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="dataStructures.interfaces.RoutingTable" qname="RoutingTable"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="populateTable" ref="0x40d7e5d8" scoped=""/>
+        <function-ref name="printTable" ref="0x40d7e6b8" scoped=""/>
+        <function-ref name="NeighborGotAdded" ref="0x40d7e798" scoped=""/>
+        <function-ref name="cstFromDst" ref="0x40d7e878" scoped=""/>
+        <function-ref name="delete" ref="0x40d7e958" scoped=""/>
+        <function-ref name="deleteDest" ref="0x40d7ea38" scoped=""/>
+        <function-ref name="updateTable" ref="0x40d7eb18" scoped=""/>
+        <function-ref name="pushback" ref="0x40d7ebf8" scoped=""/>
+        <function-ref name="writeToPayload" ref="0x40d7ecd8" scoped=""/>
+        <function-ref name="getSize" ref="0x40d7edb8" scoped=""/>
+        <function-ref name="refreshRoutingTable" ref="0x40d7ee98" scoped=""/>
+        <function-ref name="NeighborGotDeleted" ref="0x40d85010" scoped=""/>
+        <function-ref name="nxtHopFrmDst" ref="0x40d850f0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

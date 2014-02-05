@@ -1,0 +1,32 @@
+<?xml version="1.0" ?><component abstract="" loc="1:dataStructures/modules/HistoryListC.nc" nicename="dataStructures.modules.HistoryListC" qname="HistoryListC">
+      <parameters>
+        <constant loc="1:dataStructures/modules/HistoryListC.nc" name="n" ref="0x40d2abc0">
+          <component-ref nicename="dataStructures.modules.HistoryListC" qname="HistoryListC"/>
+          <type-int alignment="I:1" cname="int" size="I:2"/>
+        </constant>
+      </parameters>
+      <module/>
+    <specification><interface loc="2:dataStructures/modules/HistoryListC.nc" name="HistoryList" provided="1" ref="0x40d2ae68">
+      <component-ref nicename="dataStructures.modules.HistoryListC" qname="HistoryListC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="HistoryList" ref="0x40d2ae68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="dataStructures.interfaces.HistoryList" qname="HistoryList"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clearAll" ref="0x40d78050" scoped=""/>
+        <function-ref name="incrementSeq" ref="0x40d78130" scoped=""/>
+        <function-ref name="listContains" ref="0x40d78210" scoped=""/>
+        <function-ref name="front" ref="0x40d782f0" scoped=""/>
+        <function-ref name="isEmpty" ref="0x40d783d0" scoped=""/>
+        <function-ref name="get" ref="0x40d784b0" scoped=""/>
+        <function-ref name="delete" ref="0x40d78590" scoped=""/>
+        <function-ref name="printHistory" ref="0x40d78670" scoped=""/>
+        <function-ref name="back" ref="0x40d78750" scoped=""/>
+        <function-ref name="pushback" ref="0x40d78830" scoped=""/>
+        <function-ref name="popfront" ref="0x40d78910" scoped=""/>
+        <function-ref name="popback" ref="0x40d789f0" scoped=""/>
+        <function-ref name="set" ref="0x40d78ad0" scoped=""/>
+        <function-ref name="pushfront" ref="0x40d78c30" scoped=""/>
+        <function-ref name="size" ref="0x40d78d10" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

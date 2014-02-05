@@ -1,0 +1,160 @@
+<?xml version="1.0" ?><component loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP" safe="">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc">
+        <short>
+ Fills in the network ID byte for outgoing packets for compatibility with
+ other 6LowPAN networks.</short>
+        <long>
+ Fills in the network ID byte for outgoing packets for compatibility with
+ other 6LowPAN networks.  Filters incoming packets that are not
+ TinyOS network compatible.  Provides the 6LowpanSnoop interface to
+ sniff for packets that were not originated from TinyOS.
+
+ @author David Moss
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="58:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="SubSend" provided="0" ref="0x40c99e70">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubSend" ref="0x40c99e70" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40c98070" scoped=""/>
+        <function-ref name="getPayload" ref="0x40c98150" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40c98230" scoped=""/>
+        <function-ref name="cancel" ref="0x40c98310" scoped=""/>
+        <function-ref name="sendDone" ref="0x40c983f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="SubReceive" provided="0" ref="0x40c98600">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SubReceive" ref="0x40c98600" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40c987d8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="180:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="grantTask" provided="0" ref="0x40caa250">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="grantTask" ref="0x40caa250" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x40caa428" scoped=""/>
+        <function-ref name="runTask" ref="0x40caa508" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="CC2420Packet" provided="0" ref="0x40c98998">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420Packet" ref="0x40c98998" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420Packet" qname="CC2420Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="setPower" ref="0x40c98b70" scoped=""/>
+        <function-ref name="setNetwork" ref="0x40c98c50" scoped=""/>
+        <function-ref name="getRssi" ref="0x40c98d30" scoped=""/>
+        <function-ref name="getNetwork" ref="0x40c98e10" scoped=""/>
+        <function-ref name="getPower" ref="0x40c98ef0" scoped=""/>
+        <function-ref name="getLqi" ref="0x40c97010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="ActiveSend" provided="1" ref="0x40c6fb50">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="ActiveSend" ref="0x40c6fb50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40c6fd28" scoped=""/>
+        <function-ref name="getPayload" ref="0x40c6fe08" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40c6fee8" scoped=""/>
+        <function-ref name="cancel" ref="0x40c99010" scoped=""/>
+        <function-ref name="sendDone" ref="0x40c990f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="62:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="Queue" provided="0" ref="0x40c977b0">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Queue" ref="0x40c977b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.ResourceQueue" qname="ResourceQueue"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="enqueue" ref="0x40c97988" scoped=""/>
+        <function-ref name="isEmpty" ref="0x40c97a68" scoped=""/>
+        <function-ref name="isEnqueued" ref="0x40c97b48" scoped=""/>
+        <function-ref name="dequeue" ref="0x40c97c28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="61:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="CC2420PacketBody" provided="0" ref="0x40c971f8">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="CC2420PacketBody" ref="0x40c971f8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.cc2420.interfaces.CC2420PacketBody" qname="CC2420PacketBody"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getPayload" ref="0x40c973d0" scoped=""/>
+        <function-ref name="getHeader" ref="0x40c974b0" scoped=""/>
+        <function-ref name="getMetadata" ref="0x40c97590" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="BareReceive" provided="1" ref="0x40c6f780">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="BareReceive" ref="0x40c6f780" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40c6f958" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="Resource" provided="1" ref="0x40c71870">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Resource" ref="0x40c71870" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Resource" qname="Resource"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="release" ref="0x40c71a48" scoped=""/>
+        <function-ref name="immediateRequest" ref="0x40c71b28" scoped=""/>
+        <function-ref name="request" ref="0x40c71c08" scoped=""/>
+        <function-ref name="granted" ref="0x40c71ce8" scoped=""/>
+        <function-ref name="isOwner" ref="0x40c71dc8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="BareSend" provided="1" ref="0x40c6f010">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="BareSend" ref="0x40c6f010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Send" qname="Send"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40c6f1e8" scoped=""/>
+        <function-ref name="getPayload" ref="0x40c6f2c8" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40c6f3a8" scoped=""/>
+        <function-ref name="cancel" ref="0x40c6f488" scoped=""/>
+        <function-ref name="sendDone" ref="0x40c6f568" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="ActiveReceive" provided="1" ref="0x40c99320">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="ActiveReceive" ref="0x40c99320" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Receive" qname="Receive"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="receive" ref="0x40c994f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="54:/home/ubuntu/local/tinyos-2.1.1/tos/chips/cc2420/lowpan/CC2420TinyosNetworkP.nc" name="BarePacket" provided="1" ref="0x40c99700">
+      <component-ref nicename="tos.chips.cc2420.lowpan.CC2420TinyosNetworkP" qname="CC2420TinyosNetworkP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="BarePacket" ref="0x40c99700" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40c998d8" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40c999b8" scoped=""/>
+        <function-ref name="getPayload" ref="0x40c99a98" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40c99b78" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40c99c58" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

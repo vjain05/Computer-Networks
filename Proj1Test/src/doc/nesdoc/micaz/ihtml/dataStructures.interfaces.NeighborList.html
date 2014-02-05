@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <LINK rel="stylesheet" href="nesdoc.css" type="text/css" media="screen"><title>Interface: dataStructures.interfaces.NeighborList</title>
+  </head>
+  <body>
+    <h2>Interface: dataStructures.interfaces.NeighborList</h2>
+    <b>interface NeighborList</b><p><p><div id=heading>Commands</div><div id=funcsig><span id=funcnameshort>command pair <a href="#back">back</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#clearAll">clearAll</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#costFromDest">costFromDest</a>(uint8_t dest)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#decrementNeighborPing">decrementNeighborPing</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#delete">delete</a>(uint16_t position)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#deleteNeighbor">deleteNeighbor</a>(uint8_t toDelete)
+      </span></div><div id=funcsig><span id=funcnameshort>command pair <a href="#front">front</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command pair <a href="#get">get</a>(uint16_t position)
+      </span></div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#getRTsize">getRTsize</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#incrementANeighbor">incrementANeighbor</a>(uint8_t toIncr)
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#isEmpty">isEmpty</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command bool <a href="#neighborsContains">neighborsContains</a>(uint8_t toFind)
+      </span></div><div id=funcsig><span id=funcnameshort>command uint8_t <a href="#nextHopFromDest">nextHopFromDest</a>(uint8_t dest)
+      </span></div><div id=funcsig><span id=funcnameshort>command pair <a href="#popback">popback</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command pair <a href="#popfront">popfront</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#populateRoutingTable">populateRoutingTable</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#printNeighbors">printNeighbors</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#printRoutingTable">printRoutingTable</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#pushback">pushback</a>(pair input)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#pushbackToRoutingTable">pushbackToRoutingTable</a>(dvr element)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#pushfront">pushfront</a>(pair input)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#refreshNeighbors">refreshNeighbors</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#refreshRoutingT">refreshRoutingT</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#resetNeighborCounters">resetNeighborCounters</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#set">set</a>(uint16_t position, pair input)
+      </span></div><div id=funcsig><span id=funcnameshort>command uint16_t <a href="#size">size</a>()
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#updateRoutingTable">updateRoutingTable</a>(uint8_t *payld, uint8_t source)
+      </span></div><div id=funcsig><span id=funcnameshort>command void <a href="#writeToPayloadFromRoutingTable">writeToPayloadFromRoutingTable</a>(uint8_t *payld, uint8_t neighbor)
+      </span></div><p><div id=heading>Commands - Details</div>
+    <a name="back"></a>
+    <h4>back
+    </h4>
+    <span id=funcnameshort>command pair <b>back</b>()
+    </span><hr>
+    <a name="clearAll"></a>
+    <h4>clearAll
+    </h4>
+    <span id=funcnameshort>command void <b>clearAll</b>()
+    </span><hr>
+    <a name="costFromDest"></a>
+    <h4>costFromDest
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>costFromDest</b>(uint8_t dest)
+    </span><hr>
+    <a name="decrementNeighborPing"></a>
+    <h4>decrementNeighborPing
+    </h4>
+    <span id=funcnameshort>command void <b>decrementNeighborPing</b>()
+    </span><hr>
+    <a name="delete"></a>
+    <h4>delete
+    </h4>
+    <span id=funcnameshort>command void <b>delete</b>(uint16_t position)
+    </span><hr>
+    <a name="deleteNeighbor"></a>
+    <h4>deleteNeighbor
+    </h4>
+    <span id=funcnameshort>command void <b>deleteNeighbor</b>(uint8_t toDelete)
+    </span><hr>
+    <a name="front"></a>
+    <h4>front
+    </h4>
+    <span id=funcnameshort>command pair <b>front</b>()
+    </span><hr>
+    <a name="get"></a>
+    <h4>get
+    </h4>
+    <span id=funcnameshort>command pair <b>get</b>(uint16_t position)
+    </span><hr>
+    <a name="getRTsize"></a>
+    <h4>getRTsize
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>getRTsize</b>()
+    </span><hr>
+    <a name="incrementANeighbor"></a>
+    <h4>incrementANeighbor
+    </h4>
+    <span id=funcnameshort>command void <b>incrementANeighbor</b>(uint8_t toIncr)
+    </span><hr>
+    <a name="isEmpty"></a>
+    <h4>isEmpty
+    </h4>
+    <span id=funcnameshort>command bool <b>isEmpty</b>()
+    </span><hr>
+    <a name="neighborsContains"></a>
+    <h4>neighborsContains
+    </h4>
+    <span id=funcnameshort>command bool <b>neighborsContains</b>(uint8_t toFind)
+    </span><hr>
+    <a name="nextHopFromDest"></a>
+    <h4>nextHopFromDest
+    </h4>
+    <span id=funcnameshort>command uint8_t <b>nextHopFromDest</b>(uint8_t dest)
+    </span><hr>
+    <a name="popback"></a>
+    <h4>popback
+    </h4>
+    <span id=funcnameshort>command pair <b>popback</b>()
+    </span><hr>
+    <a name="popfront"></a>
+    <h4>popfront
+    </h4>
+    <span id=funcnameshort>command pair <b>popfront</b>()
+    </span><hr>
+    <a name="populateRoutingTable"></a>
+    <h4>populateRoutingTable
+    </h4>
+    <span id=funcnameshort>command void <b>populateRoutingTable</b>()
+    </span><hr>
+    <a name="printNeighbors"></a>
+    <h4>printNeighbors
+    </h4>
+    <span id=funcnameshort>command void <b>printNeighbors</b>()
+    </span><hr>
+    <a name="printRoutingTable"></a>
+    <h4>printRoutingTable
+    </h4>
+    <span id=funcnameshort>command void <b>printRoutingTable</b>()
+    </span><hr>
+    <a name="pushback"></a>
+    <h4>pushback
+    </h4>
+    <span id=funcnameshort>command void <b>pushback</b>(pair input)
+    </span><hr>
+    <a name="pushbackToRoutingTable"></a>
+    <h4>pushbackToRoutingTable
+    </h4>
+    <span id=funcnameshort>command void <b>pushbackToRoutingTable</b>(dvr element)
+    </span><hr>
+    <a name="pushfront"></a>
+    <h4>pushfront
+    </h4>
+    <span id=funcnameshort>command void <b>pushfront</b>(pair input)
+    </span><hr>
+    <a name="refreshNeighbors"></a>
+    <h4>refreshNeighbors
+    </h4>
+    <span id=funcnameshort>command void <b>refreshNeighbors</b>()
+    </span><hr>
+    <a name="refreshRoutingT"></a>
+    <h4>refreshRoutingT
+    </h4>
+    <span id=funcnameshort>command void <b>refreshRoutingT</b>()
+    </span><hr>
+    <a name="resetNeighborCounters"></a>
+    <h4>resetNeighborCounters
+    </h4>
+    <span id=funcnameshort>command void <b>resetNeighborCounters</b>()
+    </span><hr>
+    <a name="set"></a>
+    <h4>set
+    </h4>
+    <span id=funcnameshort>command void <b>set</b>(uint16_t position, pair input)
+    </span><hr>
+    <a name="size"></a>
+    <h4>size
+    </h4>
+    <span id=funcnameshort>command uint16_t <b>size</b>()
+    </span><hr>
+    <a name="updateRoutingTable"></a>
+    <h4>updateRoutingTable
+    </h4>
+    <span id=funcnameshort>command void <b>updateRoutingTable</b>(uint8_t *payld, uint8_t source)
+    </span><hr>
+    <a name="writeToPayloadFromRoutingTable"></a>
+    <h4>writeToPayloadFromRoutingTable
+    </h4>
+    <span id=funcnameshort>command void <b>writeToPayloadFromRoutingTable</b>(uint8_t *payld, uint8_t neighbor)
+    </span>
+  </body>
+</html>

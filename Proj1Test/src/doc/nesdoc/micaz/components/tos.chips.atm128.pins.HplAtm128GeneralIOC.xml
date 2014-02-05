@@ -1,0 +1,2497 @@
+<?xml version="1.0" ?><component loc="42:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC">
+      <documentation loc="36:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+        <short>
+ Provide GeneralIO interfaces for all of the ATmega128's pins.</short>
+        <long>
+ Provide GeneralIO interfaces for all of the ATmega128's pins.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="191:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortG0" ref="0x4042d4b0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404af3e8" scoped=""/></to>
+        </wire>
+        <wire loc="165:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortD1" ref="0x4041fa28" scoped=""/></from>
+          <to><interface-ref name="Pin1" ref="0x4046b790" scoped=""/></to>
+        </wire>
+        <wire loc="176:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortE3" ref="0x404210a0" scoped=""/></from>
+          <to><interface-ref name="Pin3" ref="0x40475410" scoped=""/></to>
+        </wire>
+        <wire loc="185:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortF3" ref="0x40426210" scoped=""/></from>
+          <to><interface-ref name="Pin3" ref="0x40484c88" scoped=""/></to>
+        </wire>
+        <wire loc="143:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortA6" ref="0x4040d670" scoped=""/></from>
+          <to><interface-ref name="Pin6" ref="0x40459ac8" scoped=""/></to>
+        </wire>
+        <wire loc="183:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortF1" ref="0x40428ce8" scoped=""/></from>
+          <to><interface-ref name="Pin1" ref="0x40485968" scoped=""/></to>
+        </wire>
+        <wire loc="146:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortB0" ref="0x4040ca98" scoped=""/></from>
+          <to><interface-ref name="Pin0" ref="0x4045eb00" scoped=""/></to>
+        </wire>
+        <wire loc="157:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortC2" ref="0x40419210" scoped=""/></from>
+          <to><interface-ref name="Pin2" ref="0x404686b0" scoped=""/></to>
+        </wire>
+        <wire loc="168:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortD4" ref="0x4041d8e0" scoped=""/></from>
+          <to><interface-ref name="Pin4" ref="0x404734f0" scoped=""/></to>
+        </wire>
+        <wire loc="179:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortE6" ref="0x40420ea8" scoped=""/></from>
+          <to><interface-ref name="Pin6" ref="0x4047e170" scoped=""/></to>
+        </wire>
+        <wire loc="138:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortA1" ref="0x404102f0" scoped=""/></from>
+          <to><interface-ref name="Pin1" ref="0x40452b80" scoped=""/></to>
+        </wire>
+        <wire loc="149:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortB3" ref="0x404148e0" scoped=""/></from>
+          <to><interface-ref name="Pin3" ref="0x4045c7d0" scoped=""/></to>
+        </wire>
+        <wire loc="160:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortC5" ref="0x404170a0" scoped=""/></from>
+          <to><interface-ref name="Pin5" ref="0x40466330" scoped=""/></to>
+        </wire>
+        <wire loc="171:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortD7" ref="0x4041b750" scoped=""/></from>
+          <to><interface-ref name="Pin7" ref="0x40470170" scoped=""/></to>
+        </wire>
+        <wire loc="188:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortF6" ref="0x4042e0a0" scoped=""/></from>
+          <to><interface-ref name="Pin6" ref="0x40482988" scoped=""/></to>
+        </wire>
+        <wire loc="194:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortG3" ref="0x4042b590" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404b33b0" scoped=""/></to>
+        </wire>
+        <wire loc="174:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortE1" ref="0x40424c08" scoped=""/></from>
+          <to><interface-ref name="Pin1" ref="0x40476090" scoped=""/></to>
+        </wire>
+        <wire loc="141:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortA4" ref="0x4040e210" scoped=""/></from>
+          <to><interface-ref name="Pin4" ref="0x4045a7d0" scoped=""/></to>
+        </wire>
+        <wire loc="152:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortB6" ref="0x40412830" scoped=""/></from>
+          <to><interface-ref name="Pin6" ref="0x404644f0" scoped=""/></to>
+        </wire>
+        <wire loc="192:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortG1" ref="0x4042c0c0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404ac8f0" scoped=""/></to>
+        </wire>
+        <wire loc="155:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortC0" ref="0x40411ce8" scoped=""/></from>
+          <to><interface-ref name="Pin0" ref="0x4046a3d8" scoped=""/></to>
+        </wire>
+        <wire loc="166:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortD2" ref="0x4041e4b0" scoped=""/></from>
+          <to><interface-ref name="Pin2" ref="0x40474170" scoped=""/></to>
+        </wire>
+        <wire loc="177:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortE4" ref="0x40421a98" scoped=""/></from>
+          <to><interface-ref name="Pin4" ref="0x40475d68" scoped=""/></to>
+        </wire>
+        <wire loc="186:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortF4" ref="0x40426c08" scoped=""/></from>
+          <to><interface-ref name="Pin4" ref="0x404836b0" scoped=""/></to>
+        </wire>
+        <wire loc="144:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortA7" ref="0x4040c0a0" scoped=""/></from>
+          <to><interface-ref name="Pin7" ref="0x404584f0" scoped=""/></to>
+        </wire>
+        <wire loc="147:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortB1" ref="0x404154b0" scoped=""/></from>
+          <to><interface-ref name="Pin1" ref="0x4045d4f0" scoped=""/></to>
+        </wire>
+        <wire loc="158:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortC3" ref="0x40419c08" scoped=""/></from>
+          <to><interface-ref name="Pin3" ref="0x40467030" scoped=""/></to>
+        </wire>
+        <wire loc="169:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortD5" ref="0x4041c2f0" scoped=""/></from>
+          <to><interface-ref name="Pin5" ref="0x40473e48" scoped=""/></to>
+        </wire>
+        <wire loc="180:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortE7" ref="0x404298e0" scoped=""/></from>
+          <to><interface-ref name="Pin7" ref="0x4047eac8" scoped=""/></to>
+        </wire>
+        <wire loc="139:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortA2" ref="0x40410ce8" scoped=""/></from>
+          <to><interface-ref name="Pin2" ref="0x4045b4f0" scoped=""/></to>
+        </wire>
+        <wire loc="150:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortB4" ref="0x404132f0" scoped=""/></from>
+          <to><interface-ref name="Pin4" ref="0x40465170" scoped=""/></to>
+        </wire>
+        <wire loc="161:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortC6" ref="0x40417a98" scoped=""/></from>
+          <to><interface-ref name="Pin6" ref="0x40466c88" scoped=""/></to>
+        </wire>
+        <wire loc="189:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortF7" ref="0x4042ea98" scoped=""/></from>
+          <to><interface-ref name="Pin7" ref="0x40481330" scoped=""/></to>
+        </wire>
+        <wire loc="164:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortD0" ref="0x40416ea8" scoped=""/></from>
+          <to><interface-ref name="Pin0" ref="0x4046cdc8" scoped=""/></to>
+        </wire>
+        <wire loc="175:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortE2" ref="0x40422670" scoped=""/></from>
+          <to><interface-ref name="Pin2" ref="0x404769e8" scoped=""/></to>
+        </wire>
+        <wire loc="184:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortF2" ref="0x40427750" scoped=""/></from>
+          <to><interface-ref name="Pin2" ref="0x40484330" scoped=""/></to>
+        </wire>
+        <wire loc="195:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortG4" ref="0x4042a010" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404b08a0" scoped=""/></to>
+        </wire>
+        <wire loc="142:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortA5" ref="0x4040ec08" scoped=""/></from>
+          <to><interface-ref name="Pin5" ref="0x40459170" scoped=""/></to>
+        </wire>
+        <wire loc="153:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortB7" ref="0x404112f0" scoped=""/></from>
+          <to><interface-ref name="Pin7" ref="0x40464e48" scoped=""/></to>
+        </wire>
+        <wire loc="182:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortF0" ref="0x404282f0" scoped=""/></from>
+          <to><interface-ref name="Pin0" ref="0x40485010" scoped=""/></to>
+        </wire>
+        <wire loc="156:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortC1" ref="0x4041a750" scoped=""/></from>
+          <to><interface-ref name="Pin1" ref="0x4046ad30" scoped=""/></to>
+        </wire>
+        <wire loc="167:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortD3" ref="0x4041eea8" scoped=""/></from>
+          <to><interface-ref name="Pin3" ref="0x40474ac8" scoped=""/></to>
+        </wire>
+        <wire loc="178:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortE5" ref="0x404204b0" scoped=""/></from>
+          <to><interface-ref name="Pin5" ref="0x4047f790" scoped=""/></to>
+        </wire>
+        <wire loc="187:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortF5" ref="0x40425670" scoped=""/></from>
+          <to><interface-ref name="Pin5" ref="0x40482030" scoped=""/></to>
+        </wire>
+        <wire loc="137:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortA0" ref="0x403fd820" scoped=""/></from>
+          <to><interface-ref name="Pin0" ref="0x40452228" scoped=""/></to>
+        </wire>
+        <wire loc="148:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortB2" ref="0x40415ea8" scoped=""/></from>
+          <to><interface-ref name="Pin2" ref="0x4045de48" scoped=""/></to>
+        </wire>
+        <wire loc="159:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortC4" ref="0x40418670" scoped=""/></from>
+          <to><interface-ref name="Pin4" ref="0x40467988" scoped=""/></to>
+        </wire>
+        <wire loc="170:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortD6" ref="0x4041cce8" scoped=""/></from>
+          <to><interface-ref name="Pin6" ref="0x404717d0" scoped=""/></to>
+        </wire>
+        <wire loc="193:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortG2" ref="0x4042cab8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x404aadd8" scoped=""/></to>
+        </wire>
+        <wire loc="173:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortE0" ref="0x40424210" scoped=""/></from>
+          <to><interface-ref name="Pin0" ref="0x404776f8" scoped=""/></to>
+        </wire>
+        <wire loc="162:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortC7" ref="0x404164b0" scoped=""/></from>
+          <to><interface-ref name="Pin7" ref="0x4046f6b0" scoped=""/></to>
+        </wire>
+        <wire loc="140:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortA3" ref="0x4040f750" scoped=""/></from>
+          <to><interface-ref name="Pin3" ref="0x4045be48" scoped=""/></to>
+        </wire>
+        <wire loc="151:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc">
+          <from><interface-ref name="PortB5" ref="0x40413d68" scoped=""/></from>
+          <to><interface-ref name="Pin5" ref="0x40465ac8" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="100:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortG0" provided="1" ref="0x4042d4b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortG0" ref="0x4042d4b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4042d888" scoped=""/>
+        <function-ref name="isInput" ref="0x4042d968" scoped=""/>
+        <function-ref name="toggle" ref="0x4042da48" scoped=""/>
+        <function-ref name="isOutput" ref="0x4042db28" scoped=""/>
+        <function-ref name="get" ref="0x4042dc08" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4042dce8" scoped=""/>
+        <function-ref name="set" ref="0x4042ddc8" scoped=""/>
+        <function-ref name="clr" ref="0x4042dea8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="74:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortD1" provided="1" ref="0x4041fa28">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortD1" ref="0x4041fa28" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041fc00" scoped=""/>
+        <function-ref name="isInput" ref="0x4041fce0" scoped=""/>
+        <function-ref name="toggle" ref="0x4041fdc0" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041fea0" scoped=""/>
+        <function-ref name="get" ref="0x4041e010" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041e0f0" scoped=""/>
+        <function-ref name="set" ref="0x4041e1d0" scoped=""/>
+        <function-ref name="clr" ref="0x4041e2b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="85:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortE3" provided="1" ref="0x404210a0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortE3" ref="0x404210a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40421278" scoped=""/>
+        <function-ref name="isInput" ref="0x40421358" scoped=""/>
+        <function-ref name="toggle" ref="0x40421438" scoped=""/>
+        <function-ref name="isOutput" ref="0x40421518" scoped=""/>
+        <function-ref name="get" ref="0x404215f8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404216d8" scoped=""/>
+        <function-ref name="set" ref="0x404217b8" scoped=""/>
+        <function-ref name="clr" ref="0x40421898" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="94:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortF3" provided="1" ref="0x40426210">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortF3" ref="0x40426210" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404263e8" scoped=""/>
+        <function-ref name="isInput" ref="0x404264c8" scoped=""/>
+        <function-ref name="toggle" ref="0x404265a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x40426688" scoped=""/>
+        <function-ref name="get" ref="0x40426768" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40426848" scoped=""/>
+        <function-ref name="set" ref="0x40426928" scoped=""/>
+        <function-ref name="clr" ref="0x40426a08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortA6" provided="1" ref="0x4040d670">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortA6" ref="0x4040d670" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4040d848" scoped=""/>
+        <function-ref name="isInput" ref="0x4040d928" scoped=""/>
+        <function-ref name="toggle" ref="0x4040da08" scoped=""/>
+        <function-ref name="isOutput" ref="0x4040dae8" scoped=""/>
+        <function-ref name="get" ref="0x4040dbc8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4040dca8" scoped=""/>
+        <function-ref name="set" ref="0x4040dd88" scoped=""/>
+        <function-ref name="clr" ref="0x4040de68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="92:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortF1" provided="1" ref="0x40428ce8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortF1" ref="0x40428ce8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40428ec0" scoped=""/>
+        <function-ref name="isInput" ref="0x40427010" scoped=""/>
+        <function-ref name="toggle" ref="0x404270f0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404271d0" scoped=""/>
+        <function-ref name="get" ref="0x404272b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40427390" scoped=""/>
+        <function-ref name="set" ref="0x40427470" scoped=""/>
+        <function-ref name="clr" ref="0x40427550" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="55:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortB0" provided="1" ref="0x4040ca98">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortB0" ref="0x4040ca98" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4040cc70" scoped=""/>
+        <function-ref name="isInput" ref="0x4040cd50" scoped=""/>
+        <function-ref name="toggle" ref="0x4040ce30" scoped=""/>
+        <function-ref name="isOutput" ref="0x4040cf10" scoped=""/>
+        <function-ref name="get" ref="0x40415010" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404150f0" scoped=""/>
+        <function-ref name="set" ref="0x404151d0" scoped=""/>
+        <function-ref name="clr" ref="0x404152b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortC2" provided="1" ref="0x40419210">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortC2" ref="0x40419210" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404193e8" scoped=""/>
+        <function-ref name="isInput" ref="0x404194c8" scoped=""/>
+        <function-ref name="toggle" ref="0x404195a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x40419688" scoped=""/>
+        <function-ref name="get" ref="0x40419768" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40419848" scoped=""/>
+        <function-ref name="set" ref="0x40419928" scoped=""/>
+        <function-ref name="clr" ref="0x40419a08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="77:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortD4" provided="1" ref="0x4041d8e0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortD4" ref="0x4041d8e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041dab8" scoped=""/>
+        <function-ref name="isInput" ref="0x4041db98" scoped=""/>
+        <function-ref name="toggle" ref="0x4041dc78" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041dd58" scoped=""/>
+        <function-ref name="get" ref="0x4041de38" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041df18" scoped=""/>
+        <function-ref name="set" ref="0x4041c010" scoped=""/>
+        <function-ref name="clr" ref="0x4041c0f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="88:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortE6" provided="1" ref="0x40420ea8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortE6" ref="0x40420ea8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404290c0" scoped=""/>
+        <function-ref name="isInput" ref="0x404291a0" scoped=""/>
+        <function-ref name="toggle" ref="0x40429280" scoped=""/>
+        <function-ref name="isOutput" ref="0x40429360" scoped=""/>
+        <function-ref name="get" ref="0x40429440" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40429520" scoped=""/>
+        <function-ref name="set" ref="0x40429600" scoped=""/>
+        <function-ref name="clr" ref="0x404296e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortA1" provided="1" ref="0x404102f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortA1" ref="0x404102f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404104c8" scoped=""/>
+        <function-ref name="isInput" ref="0x404105a8" scoped=""/>
+        <function-ref name="toggle" ref="0x40410688" scoped=""/>
+        <function-ref name="isOutput" ref="0x40410768" scoped=""/>
+        <function-ref name="get" ref="0x40410848" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40410928" scoped=""/>
+        <function-ref name="set" ref="0x40410a08" scoped=""/>
+        <function-ref name="clr" ref="0x40410ae8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="58:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortB3" provided="1" ref="0x404148e0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortB3" ref="0x404148e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40414ab8" scoped=""/>
+        <function-ref name="isInput" ref="0x40414b98" scoped=""/>
+        <function-ref name="toggle" ref="0x40414c78" scoped=""/>
+        <function-ref name="isOutput" ref="0x40414d58" scoped=""/>
+        <function-ref name="get" ref="0x40414e38" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40414f18" scoped=""/>
+        <function-ref name="set" ref="0x40413010" scoped=""/>
+        <function-ref name="clr" ref="0x404130f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortC5" provided="1" ref="0x404170a0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortC5" ref="0x404170a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40417278" scoped=""/>
+        <function-ref name="isInput" ref="0x40417358" scoped=""/>
+        <function-ref name="toggle" ref="0x40417438" scoped=""/>
+        <function-ref name="isOutput" ref="0x40417518" scoped=""/>
+        <function-ref name="get" ref="0x404175f8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404176d8" scoped=""/>
+        <function-ref name="set" ref="0x404177b8" scoped=""/>
+        <function-ref name="clr" ref="0x40417898" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="80:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortD7" provided="1" ref="0x4041b750">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortD7" ref="0x4041b750" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041b928" scoped=""/>
+        <function-ref name="isInput" ref="0x4041ba08" scoped=""/>
+        <function-ref name="toggle" ref="0x4041bae8" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041bbc8" scoped=""/>
+        <function-ref name="get" ref="0x4041bca8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041bd88" scoped=""/>
+        <function-ref name="set" ref="0x4041be68" scoped=""/>
+        <function-ref name="clr" ref="0x40424010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="97:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortF6" provided="1" ref="0x4042e0a0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortF6" ref="0x4042e0a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4042e278" scoped=""/>
+        <function-ref name="isInput" ref="0x4042e358" scoped=""/>
+        <function-ref name="toggle" ref="0x4042e438" scoped=""/>
+        <function-ref name="isOutput" ref="0x4042e518" scoped=""/>
+        <function-ref name="get" ref="0x4042e5f8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4042e6d8" scoped=""/>
+        <function-ref name="set" ref="0x4042e7b8" scoped=""/>
+        <function-ref name="clr" ref="0x4042e898" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="103:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortG3" provided="1" ref="0x4042b590">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortG3" ref="0x4042b590" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4042b768" scoped=""/>
+        <function-ref name="isInput" ref="0x4042b848" scoped=""/>
+        <function-ref name="toggle" ref="0x4042b928" scoped=""/>
+        <function-ref name="isOutput" ref="0x4042ba08" scoped=""/>
+        <function-ref name="get" ref="0x4042bae8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4042bbc8" scoped=""/>
+        <function-ref name="set" ref="0x4042bca8" scoped=""/>
+        <function-ref name="clr" ref="0x4042bd88" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="83:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortE1" provided="1" ref="0x40424c08">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortE1" ref="0x40424c08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40424de0" scoped=""/>
+        <function-ref name="isInput" ref="0x40424ec0" scoped=""/>
+        <function-ref name="toggle" ref="0x40422010" scoped=""/>
+        <function-ref name="isOutput" ref="0x404220f0" scoped=""/>
+        <function-ref name="get" ref="0x404221d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404222b0" scoped=""/>
+        <function-ref name="set" ref="0x40422390" scoped=""/>
+        <function-ref name="clr" ref="0x40422470" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortA4" provided="1" ref="0x4040e210">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortA4" ref="0x4040e210" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4040e3e8" scoped=""/>
+        <function-ref name="isInput" ref="0x4040e4c8" scoped=""/>
+        <function-ref name="toggle" ref="0x4040e5a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x4040e688" scoped=""/>
+        <function-ref name="get" ref="0x4040e768" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4040e848" scoped=""/>
+        <function-ref name="set" ref="0x4040e928" scoped=""/>
+        <function-ref name="clr" ref="0x4040ea08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="61:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortB6" provided="1" ref="0x40412830">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortB6" ref="0x40412830" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40412a08" scoped=""/>
+        <function-ref name="isInput" ref="0x40412ae8" scoped=""/>
+        <function-ref name="toggle" ref="0x40412bc8" scoped=""/>
+        <function-ref name="isOutput" ref="0x40412ca8" scoped=""/>
+        <function-ref name="get" ref="0x40412d88" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40412e68" scoped=""/>
+        <function-ref name="set" ref="0x40411010" scoped=""/>
+        <function-ref name="clr" ref="0x404110f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="101:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortG1" provided="1" ref="0x4042c0c0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortG1" ref="0x4042c0c0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4042c298" scoped=""/>
+        <function-ref name="isInput" ref="0x4042c378" scoped=""/>
+        <function-ref name="toggle" ref="0x4042c458" scoped=""/>
+        <function-ref name="isOutput" ref="0x4042c538" scoped=""/>
+        <function-ref name="get" ref="0x4042c618" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4042c6f8" scoped=""/>
+        <function-ref name="set" ref="0x4042c7d8" scoped=""/>
+        <function-ref name="clr" ref="0x4042c8b8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="64:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortC0" provided="1" ref="0x40411ce8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortC0" ref="0x40411ce8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40411ec0" scoped=""/>
+        <function-ref name="isInput" ref="0x4041a010" scoped=""/>
+        <function-ref name="toggle" ref="0x4041a0f0" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041a1d0" scoped=""/>
+        <function-ref name="get" ref="0x4041a2b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041a390" scoped=""/>
+        <function-ref name="set" ref="0x4041a470" scoped=""/>
+        <function-ref name="clr" ref="0x4041a550" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="75:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortD2" provided="1" ref="0x4041e4b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortD2" ref="0x4041e4b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041e688" scoped=""/>
+        <function-ref name="isInput" ref="0x4041e768" scoped=""/>
+        <function-ref name="toggle" ref="0x4041e848" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041e928" scoped=""/>
+        <function-ref name="get" ref="0x4041ea08" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041eae8" scoped=""/>
+        <function-ref name="set" ref="0x4041ebc8" scoped=""/>
+        <function-ref name="clr" ref="0x4041eca8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="86:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortE4" provided="1" ref="0x40421a98">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortE4" ref="0x40421a98" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40421c70" scoped=""/>
+        <function-ref name="isInput" ref="0x40421d50" scoped=""/>
+        <function-ref name="toggle" ref="0x40421e30" scoped=""/>
+        <function-ref name="isOutput" ref="0x40421f10" scoped=""/>
+        <function-ref name="get" ref="0x40420010" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404200f0" scoped=""/>
+        <function-ref name="set" ref="0x404201d0" scoped=""/>
+        <function-ref name="clr" ref="0x404202b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="95:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortF4" provided="1" ref="0x40426c08">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortF4" ref="0x40426c08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40426de0" scoped=""/>
+        <function-ref name="isInput" ref="0x40426ec0" scoped=""/>
+        <function-ref name="toggle" ref="0x40425010" scoped=""/>
+        <function-ref name="isOutput" ref="0x404250f0" scoped=""/>
+        <function-ref name="get" ref="0x404251d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404252b0" scoped=""/>
+        <function-ref name="set" ref="0x40425390" scoped=""/>
+        <function-ref name="clr" ref="0x40425470" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortA7" provided="1" ref="0x4040c0a0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortA7" ref="0x4040c0a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4040c278" scoped=""/>
+        <function-ref name="isInput" ref="0x4040c358" scoped=""/>
+        <function-ref name="toggle" ref="0x4040c438" scoped=""/>
+        <function-ref name="isOutput" ref="0x4040c518" scoped=""/>
+        <function-ref name="get" ref="0x4040c5f8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4040c6d8" scoped=""/>
+        <function-ref name="set" ref="0x4040c7b8" scoped=""/>
+        <function-ref name="clr" ref="0x4040c898" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="56:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortB1" provided="1" ref="0x404154b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortB1" ref="0x404154b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40415688" scoped=""/>
+        <function-ref name="isInput" ref="0x40415768" scoped=""/>
+        <function-ref name="toggle" ref="0x40415848" scoped=""/>
+        <function-ref name="isOutput" ref="0x40415928" scoped=""/>
+        <function-ref name="get" ref="0x40415a08" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40415ae8" scoped=""/>
+        <function-ref name="set" ref="0x40415bc8" scoped=""/>
+        <function-ref name="clr" ref="0x40415ca8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortC3" provided="1" ref="0x40419c08">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortC3" ref="0x40419c08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40419de0" scoped=""/>
+        <function-ref name="isInput" ref="0x40419ec0" scoped=""/>
+        <function-ref name="toggle" ref="0x40418010" scoped=""/>
+        <function-ref name="isOutput" ref="0x404180f0" scoped=""/>
+        <function-ref name="get" ref="0x404181d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404182b0" scoped=""/>
+        <function-ref name="set" ref="0x40418390" scoped=""/>
+        <function-ref name="clr" ref="0x40418470" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="78:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortD5" provided="1" ref="0x4041c2f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortD5" ref="0x4041c2f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041c4c8" scoped=""/>
+        <function-ref name="isInput" ref="0x4041c5a8" scoped=""/>
+        <function-ref name="toggle" ref="0x4041c688" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041c768" scoped=""/>
+        <function-ref name="get" ref="0x4041c848" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041c928" scoped=""/>
+        <function-ref name="set" ref="0x4041ca08" scoped=""/>
+        <function-ref name="clr" ref="0x4041cae8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="89:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortE7" provided="1" ref="0x404298e0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortE7" ref="0x404298e0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40429ab8" scoped=""/>
+        <function-ref name="isInput" ref="0x40429b98" scoped=""/>
+        <function-ref name="toggle" ref="0x40429c78" scoped=""/>
+        <function-ref name="isOutput" ref="0x40429d58" scoped=""/>
+        <function-ref name="get" ref="0x40429e38" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40429f18" scoped=""/>
+        <function-ref name="set" ref="0x40428010" scoped=""/>
+        <function-ref name="clr" ref="0x404280f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortA2" provided="1" ref="0x40410ce8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortA2" ref="0x40410ce8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40410ec0" scoped=""/>
+        <function-ref name="isInput" ref="0x4040f010" scoped=""/>
+        <function-ref name="toggle" ref="0x4040f0f0" scoped=""/>
+        <function-ref name="isOutput" ref="0x4040f1d0" scoped=""/>
+        <function-ref name="get" ref="0x4040f2b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4040f390" scoped=""/>
+        <function-ref name="set" ref="0x4040f470" scoped=""/>
+        <function-ref name="clr" ref="0x4040f550" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="59:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortB4" provided="1" ref="0x404132f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortB4" ref="0x404132f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40413548" scoped=""/>
+        <function-ref name="isInput" ref="0x40413628" scoped=""/>
+        <function-ref name="toggle" ref="0x40413708" scoped=""/>
+        <function-ref name="isOutput" ref="0x404137e8" scoped=""/>
+        <function-ref name="get" ref="0x404138c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404139a8" scoped=""/>
+        <function-ref name="set" ref="0x40413a88" scoped=""/>
+        <function-ref name="clr" ref="0x40413b68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortC6" provided="1" ref="0x40417a98">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortC6" ref="0x40417a98" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40417c70" scoped=""/>
+        <function-ref name="isInput" ref="0x40417d50" scoped=""/>
+        <function-ref name="toggle" ref="0x40417e30" scoped=""/>
+        <function-ref name="isOutput" ref="0x40417f10" scoped=""/>
+        <function-ref name="get" ref="0x40416010" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404160f0" scoped=""/>
+        <function-ref name="set" ref="0x404161d0" scoped=""/>
+        <function-ref name="clr" ref="0x404162b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="98:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortF7" provided="1" ref="0x4042ea98">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortF7" ref="0x4042ea98" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4042ec70" scoped=""/>
+        <function-ref name="isInput" ref="0x4042ed50" scoped=""/>
+        <function-ref name="toggle" ref="0x4042ee30" scoped=""/>
+        <function-ref name="isOutput" ref="0x4042ef10" scoped=""/>
+        <function-ref name="get" ref="0x4042d010" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4042d0f0" scoped=""/>
+        <function-ref name="set" ref="0x4042d1d0" scoped=""/>
+        <function-ref name="clr" ref="0x4042d2b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortD0" provided="1" ref="0x40416ea8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortD0" ref="0x40416ea8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041f208" scoped=""/>
+        <function-ref name="isInput" ref="0x4041f2e8" scoped=""/>
+        <function-ref name="toggle" ref="0x4041f3c8" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041f4a8" scoped=""/>
+        <function-ref name="get" ref="0x4041f588" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041f668" scoped=""/>
+        <function-ref name="set" ref="0x4041f748" scoped=""/>
+        <function-ref name="clr" ref="0x4041f828" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="84:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortE2" provided="1" ref="0x40422670">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortE2" ref="0x40422670" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40422848" scoped=""/>
+        <function-ref name="isInput" ref="0x40422928" scoped=""/>
+        <function-ref name="toggle" ref="0x40422a08" scoped=""/>
+        <function-ref name="isOutput" ref="0x40422ae8" scoped=""/>
+        <function-ref name="get" ref="0x40422bc8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40422ca8" scoped=""/>
+        <function-ref name="set" ref="0x40422d88" scoped=""/>
+        <function-ref name="clr" ref="0x40422e68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="93:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortF2" provided="1" ref="0x40427750">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortF2" ref="0x40427750" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40427928" scoped=""/>
+        <function-ref name="isInput" ref="0x40427a08" scoped=""/>
+        <function-ref name="toggle" ref="0x40427ae8" scoped=""/>
+        <function-ref name="isOutput" ref="0x40427bc8" scoped=""/>
+        <function-ref name="get" ref="0x40427ca8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40427d88" scoped=""/>
+        <function-ref name="set" ref="0x40427e68" scoped=""/>
+        <function-ref name="clr" ref="0x40426010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="104:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortG4" provided="1" ref="0x4042a010">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortG4" ref="0x4042a010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4042a1e8" scoped=""/>
+        <function-ref name="isInput" ref="0x4042a2c8" scoped=""/>
+        <function-ref name="toggle" ref="0x4042a3a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x4042a488" scoped=""/>
+        <function-ref name="get" ref="0x4042a568" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4042a648" scoped=""/>
+        <function-ref name="set" ref="0x4042a728" scoped=""/>
+        <function-ref name="clr" ref="0x4042a808" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortA5" provided="1" ref="0x4040ec08">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortA5" ref="0x4040ec08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4040ede0" scoped=""/>
+        <function-ref name="isInput" ref="0x4040eec0" scoped=""/>
+        <function-ref name="toggle" ref="0x4040d010" scoped=""/>
+        <function-ref name="isOutput" ref="0x4040d0f0" scoped=""/>
+        <function-ref name="get" ref="0x4040d1d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4040d2b0" scoped=""/>
+        <function-ref name="set" ref="0x4040d390" scoped=""/>
+        <function-ref name="clr" ref="0x4040d470" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="62:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortB7" provided="1" ref="0x404112f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortB7" ref="0x404112f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404114c8" scoped=""/>
+        <function-ref name="isInput" ref="0x404115a8" scoped=""/>
+        <function-ref name="toggle" ref="0x40411688" scoped=""/>
+        <function-ref name="isOutput" ref="0x40411768" scoped=""/>
+        <function-ref name="get" ref="0x40411848" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40411928" scoped=""/>
+        <function-ref name="set" ref="0x40411a08" scoped=""/>
+        <function-ref name="clr" ref="0x40411ae8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="91:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortF0" provided="1" ref="0x404282f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortF0" ref="0x404282f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404284c8" scoped=""/>
+        <function-ref name="isInput" ref="0x404285a8" scoped=""/>
+        <function-ref name="toggle" ref="0x40428688" scoped=""/>
+        <function-ref name="isOutput" ref="0x40428768" scoped=""/>
+        <function-ref name="get" ref="0x40428848" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40428928" scoped=""/>
+        <function-ref name="set" ref="0x40428a08" scoped=""/>
+        <function-ref name="clr" ref="0x40428ae8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="65:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortC1" provided="1" ref="0x4041a750">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortC1" ref="0x4041a750" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041a928" scoped=""/>
+        <function-ref name="isInput" ref="0x4041aa08" scoped=""/>
+        <function-ref name="toggle" ref="0x4041aae8" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041abc8" scoped=""/>
+        <function-ref name="get" ref="0x4041aca8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041ad88" scoped=""/>
+        <function-ref name="set" ref="0x4041ae68" scoped=""/>
+        <function-ref name="clr" ref="0x40419010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="76:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortD3" provided="1" ref="0x4041eea8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortD3" ref="0x4041eea8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041d0c0" scoped=""/>
+        <function-ref name="isInput" ref="0x4041d1a0" scoped=""/>
+        <function-ref name="toggle" ref="0x4041d280" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041d360" scoped=""/>
+        <function-ref name="get" ref="0x4041d440" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041d520" scoped=""/>
+        <function-ref name="set" ref="0x4041d600" scoped=""/>
+        <function-ref name="clr" ref="0x4041d6e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="87:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortE5" provided="1" ref="0x404204b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortE5" ref="0x404204b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40420688" scoped=""/>
+        <function-ref name="isInput" ref="0x40420768" scoped=""/>
+        <function-ref name="toggle" ref="0x40420848" scoped=""/>
+        <function-ref name="isOutput" ref="0x40420928" scoped=""/>
+        <function-ref name="get" ref="0x40420a08" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40420ae8" scoped=""/>
+        <function-ref name="set" ref="0x40420bc8" scoped=""/>
+        <function-ref name="clr" ref="0x40420ca8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="96:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortF5" provided="1" ref="0x40425670">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortF5" ref="0x40425670" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40425848" scoped=""/>
+        <function-ref name="isInput" ref="0x40425928" scoped=""/>
+        <function-ref name="toggle" ref="0x40425a08" scoped=""/>
+        <function-ref name="isOutput" ref="0x40425ae8" scoped=""/>
+        <function-ref name="get" ref="0x40425bc8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40425ca8" scoped=""/>
+        <function-ref name="set" ref="0x40425d88" scoped=""/>
+        <function-ref name="clr" ref="0x40425e68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortA0" provided="1" ref="0x403fd820">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortA0" ref="0x403fd820" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x403fd9f8" scoped=""/>
+        <function-ref name="isInput" ref="0x403fdad8" scoped=""/>
+        <function-ref name="toggle" ref="0x403fdbb8" scoped=""/>
+        <function-ref name="isOutput" ref="0x403fdc98" scoped=""/>
+        <function-ref name="get" ref="0x403fdd78" scoped=""/>
+        <function-ref name="makeOutput" ref="0x403fde58" scoped=""/>
+        <function-ref name="set" ref="0x40410010" scoped=""/>
+        <function-ref name="clr" ref="0x404100f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="57:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortB2" provided="1" ref="0x40415ea8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortB2" ref="0x40415ea8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404140c0" scoped=""/>
+        <function-ref name="isInput" ref="0x404141a0" scoped=""/>
+        <function-ref name="toggle" ref="0x40414280" scoped=""/>
+        <function-ref name="isOutput" ref="0x40414360" scoped=""/>
+        <function-ref name="get" ref="0x40414440" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40414520" scoped=""/>
+        <function-ref name="set" ref="0x40414600" scoped=""/>
+        <function-ref name="clr" ref="0x404146e0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortC4" provided="1" ref="0x40418670">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortC4" ref="0x40418670" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40418848" scoped=""/>
+        <function-ref name="isInput" ref="0x40418928" scoped=""/>
+        <function-ref name="toggle" ref="0x40418a08" scoped=""/>
+        <function-ref name="isOutput" ref="0x40418ae8" scoped=""/>
+        <function-ref name="get" ref="0x40418bc8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40418ca8" scoped=""/>
+        <function-ref name="set" ref="0x40418d88" scoped=""/>
+        <function-ref name="clr" ref="0x40418e68" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="79:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortD6" provided="1" ref="0x4041cce8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortD6" ref="0x4041cce8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4041cec0" scoped=""/>
+        <function-ref name="isInput" ref="0x4041b010" scoped=""/>
+        <function-ref name="toggle" ref="0x4041b0f0" scoped=""/>
+        <function-ref name="isOutput" ref="0x4041b1d0" scoped=""/>
+        <function-ref name="get" ref="0x4041b2b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4041b390" scoped=""/>
+        <function-ref name="set" ref="0x4041b470" scoped=""/>
+        <function-ref name="clr" ref="0x4041b550" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="102:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortG2" provided="1" ref="0x4042cab8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortG2" ref="0x4042cab8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4042cc90" scoped=""/>
+        <function-ref name="isInput" ref="0x4042cd70" scoped=""/>
+        <function-ref name="toggle" ref="0x4042ce50" scoped=""/>
+        <function-ref name="isOutput" ref="0x4042b010" scoped=""/>
+        <function-ref name="get" ref="0x4042b0f0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4042b1d0" scoped=""/>
+        <function-ref name="set" ref="0x4042b2b0" scoped=""/>
+        <function-ref name="clr" ref="0x4042b390" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="82:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortE0" provided="1" ref="0x40424210">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortE0" ref="0x40424210" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404243e8" scoped=""/>
+        <function-ref name="isInput" ref="0x404244c8" scoped=""/>
+        <function-ref name="toggle" ref="0x404245a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x40424688" scoped=""/>
+        <function-ref name="get" ref="0x40424768" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40424848" scoped=""/>
+        <function-ref name="set" ref="0x40424928" scoped=""/>
+        <function-ref name="clr" ref="0x40424a08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortC7" provided="1" ref="0x404164b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortC7" ref="0x404164b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40416688" scoped=""/>
+        <function-ref name="isInput" ref="0x40416768" scoped=""/>
+        <function-ref name="toggle" ref="0x40416848" scoped=""/>
+        <function-ref name="isOutput" ref="0x40416928" scoped=""/>
+        <function-ref name="get" ref="0x40416a08" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40416ae8" scoped=""/>
+        <function-ref name="set" ref="0x40416bc8" scoped=""/>
+        <function-ref name="clr" ref="0x40416ca8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortA3" provided="1" ref="0x4040f750">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortA3" ref="0x4040f750" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4040f928" scoped=""/>
+        <function-ref name="isInput" ref="0x4040fa08" scoped=""/>
+        <function-ref name="toggle" ref="0x4040fae8" scoped=""/>
+        <function-ref name="isOutput" ref="0x4040fbc8" scoped=""/>
+        <function-ref name="get" ref="0x4040fca8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4040fd88" scoped=""/>
+        <function-ref name="set" ref="0x4040fe68" scoped=""/>
+        <function-ref name="clr" ref="0x4040e010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="60:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOC.nc" name="PortB5" provided="1" ref="0x40413d68">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOC" qname="HplAtm128GeneralIOC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="PortB5" ref="0x40413d68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40412010" scoped=""/>
+        <function-ref name="isInput" ref="0x404120f0" scoped=""/>
+        <function-ref name="toggle" ref="0x404121d0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404122b0" scoped=""/>
+        <function-ref name="get" ref="0x40412390" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40412470" scoped=""/>
+        <function-ref name="set" ref="0x40412550" scoped=""/>
+        <function-ref name="clr" ref="0x40412630" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin4" provided="1" ref="0x40465170">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin4" ref="0x40465170" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40465348" scoped=""/>
+        <function-ref name="isInput" ref="0x40465428" scoped=""/>
+        <function-ref name="toggle" ref="0x40465508" scoped=""/>
+        <function-ref name="isOutput" ref="0x404655e8" scoped=""/>
+        <function-ref name="get" ref="0x404656c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404657a8" scoped=""/>
+        <function-ref name="set" ref="0x40465888" scoped=""/>
+        <function-ref name="clr" ref="0x40465968" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin4" provided="1" ref="0x40475d68">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin4" ref="0x40475d68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4047f010" scoped=""/>
+        <function-ref name="isInput" ref="0x4047f0f0" scoped=""/>
+        <function-ref name="toggle" ref="0x4047f1d0" scoped=""/>
+        <function-ref name="isOutput" ref="0x4047f2b0" scoped=""/>
+        <function-ref name="get" ref="0x4047f390" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4047f470" scoped=""/>
+        <function-ref name="set" ref="0x4047f550" scoped=""/>
+        <function-ref name="clr" ref="0x4047f630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin6" provided="1" ref="0x40466c88">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin6" ref="0x40466c88" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40466e60" scoped=""/>
+        <function-ref name="isInput" ref="0x4046f010" scoped=""/>
+        <function-ref name="toggle" ref="0x4046f0f0" scoped=""/>
+        <function-ref name="isOutput" ref="0x4046f1d0" scoped=""/>
+        <function-ref name="get" ref="0x4046f2b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4046f390" scoped=""/>
+        <function-ref name="set" ref="0x4046f470" scoped=""/>
+        <function-ref name="clr" ref="0x4046f550" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin5" provided="1" ref="0x40466330">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin5" ref="0x40466330" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40466508" scoped=""/>
+        <function-ref name="isInput" ref="0x404665e8" scoped=""/>
+        <function-ref name="toggle" ref="0x404666c8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404667a8" scoped=""/>
+        <function-ref name="get" ref="0x40466888" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40466968" scoped=""/>
+        <function-ref name="set" ref="0x40466a48" scoped=""/>
+        <function-ref name="clr" ref="0x40466b28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin5" provided="1" ref="0x40473e48">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin5" ref="0x40473e48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40471050" scoped=""/>
+        <function-ref name="isInput" ref="0x40471130" scoped=""/>
+        <function-ref name="toggle" ref="0x40471210" scoped=""/>
+        <function-ref name="isOutput" ref="0x404712f0" scoped=""/>
+        <function-ref name="get" ref="0x404713d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404714b0" scoped=""/>
+        <function-ref name="set" ref="0x40471590" scoped=""/>
+        <function-ref name="clr" ref="0x40471670" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin7" provided="1" ref="0x4047eac8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin7" ref="0x4047eac8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4047eca0" scoped=""/>
+        <function-ref name="isInput" ref="0x4047ed80" scoped=""/>
+        <function-ref name="toggle" ref="0x4047ee60" scoped=""/>
+        <function-ref name="isOutput" ref="0x4047d010" scoped=""/>
+        <function-ref name="get" ref="0x4047d0f0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4047d1d0" scoped=""/>
+        <function-ref name="set" ref="0x4047d2b0" scoped=""/>
+        <function-ref name="clr" ref="0x4047d390" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin4" provided="1" ref="0x404836b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin4" ref="0x404836b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40483888" scoped=""/>
+        <function-ref name="isInput" ref="0x40483968" scoped=""/>
+        <function-ref name="toggle" ref="0x40483a48" scoped=""/>
+        <function-ref name="isOutput" ref="0x40483b28" scoped=""/>
+        <function-ref name="get" ref="0x40483c08" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40483ce8" scoped=""/>
+        <function-ref name="set" ref="0x40483dc8" scoped=""/>
+        <function-ref name="clr" ref="0x40483ea8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin2" provided="1" ref="0x404769e8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin2" ref="0x404769e8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40476bc0" scoped=""/>
+        <function-ref name="isInput" ref="0x40476ca0" scoped=""/>
+        <function-ref name="toggle" ref="0x40476d80" scoped=""/>
+        <function-ref name="isOutput" ref="0x40476e60" scoped=""/>
+        <function-ref name="get" ref="0x40475010" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404750f0" scoped=""/>
+        <function-ref name="set" ref="0x404751d0" scoped=""/>
+        <function-ref name="clr" ref="0x404752b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin0" provided="1" ref="0x4045eb00">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin0" ref="0x4045eb00" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4045ecd8" scoped=""/>
+        <function-ref name="isInput" ref="0x4045edb8" scoped=""/>
+        <function-ref name="toggle" ref="0x4045ee98" scoped=""/>
+        <function-ref name="isOutput" ref="0x4045d010" scoped=""/>
+        <function-ref name="get" ref="0x4045d0f0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4045d1d0" scoped=""/>
+        <function-ref name="set" ref="0x4045d2b0" scoped=""/>
+        <function-ref name="clr" ref="0x4045d390" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin2" provided="1" ref="0x40474170">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin2" ref="0x40474170" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40474348" scoped=""/>
+        <function-ref name="isInput" ref="0x40474428" scoped=""/>
+        <function-ref name="toggle" ref="0x40474508" scoped=""/>
+        <function-ref name="isOutput" ref="0x404745e8" scoped=""/>
+        <function-ref name="get" ref="0x404746c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404747a8" scoped=""/>
+        <function-ref name="set" ref="0x40474888" scoped=""/>
+        <function-ref name="clr" ref="0x40474968" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin3" provided="1" ref="0x40475410">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin3" ref="0x40475410" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404755e8" scoped=""/>
+        <function-ref name="isInput" ref="0x404756c8" scoped=""/>
+        <function-ref name="toggle" ref="0x404757a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x40475888" scoped=""/>
+        <function-ref name="get" ref="0x40475968" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40475a48" scoped=""/>
+        <function-ref name="set" ref="0x40475b28" scoped=""/>
+        <function-ref name="clr" ref="0x40475c08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin5" provided="1" ref="0x40482030">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin5" ref="0x40482030" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40482208" scoped=""/>
+        <function-ref name="isInput" ref="0x404822e8" scoped=""/>
+        <function-ref name="toggle" ref="0x404823c8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404824a8" scoped=""/>
+        <function-ref name="get" ref="0x40482588" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40482668" scoped=""/>
+        <function-ref name="set" ref="0x40482748" scoped=""/>
+        <function-ref name="clr" ref="0x40482828" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin3" provided="1" ref="0x40484c88">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin3" ref="0x40484c88" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40484e60" scoped=""/>
+        <function-ref name="isInput" ref="0x40483010" scoped=""/>
+        <function-ref name="toggle" ref="0x404830f0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404831d0" scoped=""/>
+        <function-ref name="get" ref="0x404832b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40483390" scoped=""/>
+        <function-ref name="set" ref="0x40483470" scoped=""/>
+        <function-ref name="clr" ref="0x40483550" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin4" provided="1" ref="0x404734f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin4" ref="0x404734f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404736c8" scoped=""/>
+        <function-ref name="isInput" ref="0x404737a8" scoped=""/>
+        <function-ref name="toggle" ref="0x40473888" scoped=""/>
+        <function-ref name="isOutput" ref="0x40473968" scoped=""/>
+        <function-ref name="get" ref="0x40473a48" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40473b28" scoped=""/>
+        <function-ref name="set" ref="0x40473c08" scoped=""/>
+        <function-ref name="clr" ref="0x40473ce8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin2" provided="1" ref="0x4045b4f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin2" ref="0x4045b4f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4045b6c8" scoped=""/>
+        <function-ref name="isInput" ref="0x4045b7a8" scoped=""/>
+        <function-ref name="toggle" ref="0x4045b888" scoped=""/>
+        <function-ref name="isOutput" ref="0x4045b968" scoped=""/>
+        <function-ref name="get" ref="0x4045ba48" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4045bb28" scoped=""/>
+        <function-ref name="set" ref="0x4045bc08" scoped=""/>
+        <function-ref name="clr" ref="0x4045bce8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin7" provided="1" ref="0x4046f6b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin7" ref="0x4046f6b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4046f888" scoped=""/>
+        <function-ref name="isInput" ref="0x4046f968" scoped=""/>
+        <function-ref name="toggle" ref="0x4046fa48" scoped=""/>
+        <function-ref name="isOutput" ref="0x4046fb28" scoped=""/>
+        <function-ref name="get" ref="0x4046fc08" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4046fce8" scoped=""/>
+        <function-ref name="set" ref="0x4046fdc8" scoped=""/>
+        <function-ref name="clr" ref="0x4046fea8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin1" provided="1" ref="0x4045d4f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin1" ref="0x4045d4f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4045d6c8" scoped=""/>
+        <function-ref name="isInput" ref="0x4045d7a8" scoped=""/>
+        <function-ref name="toggle" ref="0x4045d888" scoped=""/>
+        <function-ref name="isOutput" ref="0x4045d968" scoped=""/>
+        <function-ref name="get" ref="0x4045da48" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4045db28" scoped=""/>
+        <function-ref name="set" ref="0x4045dc08" scoped=""/>
+        <function-ref name="clr" ref="0x4045dce8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin0" provided="1" ref="0x40452228">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin0" ref="0x40452228" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40452400" scoped=""/>
+        <function-ref name="isInput" ref="0x404524e0" scoped=""/>
+        <function-ref name="toggle" ref="0x404525c0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404526a0" scoped=""/>
+        <function-ref name="get" ref="0x40452780" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40452860" scoped=""/>
+        <function-ref name="set" ref="0x40452940" scoped=""/>
+        <function-ref name="clr" ref="0x40452a20" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin0" provided="1" ref="0x40485010">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin0" ref="0x40485010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404851e8" scoped=""/>
+        <function-ref name="isInput" ref="0x404852c8" scoped=""/>
+        <function-ref name="toggle" ref="0x404853a8" scoped=""/>
+        <function-ref name="isOutput" ref="0x40485488" scoped=""/>
+        <function-ref name="get" ref="0x40485568" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40485648" scoped=""/>
+        <function-ref name="set" ref="0x40485728" scoped=""/>
+        <function-ref name="clr" ref="0x40485808" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin0" provided="1" ref="0x4046cdc8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin0" ref="0x4046cdc8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4046b010" scoped=""/>
+        <function-ref name="isInput" ref="0x4046b0f0" scoped=""/>
+        <function-ref name="toggle" ref="0x4046b1d0" scoped=""/>
+        <function-ref name="isOutput" ref="0x4046b2b0" scoped=""/>
+        <function-ref name="get" ref="0x4046b390" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4046b470" scoped=""/>
+        <function-ref name="set" ref="0x4046b550" scoped=""/>
+        <function-ref name="clr" ref="0x4046b630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin1" provided="1" ref="0x40485968">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin1" ref="0x40485968" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40485b40" scoped=""/>
+        <function-ref name="isInput" ref="0x40485c20" scoped=""/>
+        <function-ref name="toggle" ref="0x40485d00" scoped=""/>
+        <function-ref name="isOutput" ref="0x40485de0" scoped=""/>
+        <function-ref name="get" ref="0x40485ec0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40484010" scoped=""/>
+        <function-ref name="set" ref="0x404840f0" scoped=""/>
+        <function-ref name="clr" ref="0x404841d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin4" provided="1" ref="0x4045a7d0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin4" ref="0x4045a7d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4045a9a8" scoped=""/>
+        <function-ref name="isInput" ref="0x4045aa88" scoped=""/>
+        <function-ref name="toggle" ref="0x4045ab68" scoped=""/>
+        <function-ref name="isOutput" ref="0x4045ac48" scoped=""/>
+        <function-ref name="get" ref="0x4045ad28" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4045ae08" scoped=""/>
+        <function-ref name="set" ref="0x4045aee8" scoped=""/>
+        <function-ref name="clr" ref="0x40459010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin2" provided="1" ref="0x404686b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin2" ref="0x404686b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40468888" scoped=""/>
+        <function-ref name="isInput" ref="0x40468968" scoped=""/>
+        <function-ref name="toggle" ref="0x40468a48" scoped=""/>
+        <function-ref name="isOutput" ref="0x40468b28" scoped=""/>
+        <function-ref name="get" ref="0x40468c08" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40468ce8" scoped=""/>
+        <function-ref name="set" ref="0x40468dc8" scoped=""/>
+        <function-ref name="clr" ref="0x40468ea8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin6" provided="1" ref="0x404717d0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin6" ref="0x404717d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404719a8" scoped=""/>
+        <function-ref name="isInput" ref="0x40471a88" scoped=""/>
+        <function-ref name="toggle" ref="0x40471b68" scoped=""/>
+        <function-ref name="isOutput" ref="0x40471c48" scoped=""/>
+        <function-ref name="get" ref="0x40471d28" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40471e08" scoped=""/>
+        <function-ref name="set" ref="0x40471ee8" scoped=""/>
+        <function-ref name="clr" ref="0x40470010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin6" provided="1" ref="0x4047e170">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin6" ref="0x4047e170" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4047e348" scoped=""/>
+        <function-ref name="isInput" ref="0x4047e428" scoped=""/>
+        <function-ref name="toggle" ref="0x4047e508" scoped=""/>
+        <function-ref name="isOutput" ref="0x4047e5e8" scoped=""/>
+        <function-ref name="get" ref="0x4047e6c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4047e7a8" scoped=""/>
+        <function-ref name="set" ref="0x4047e888" scoped=""/>
+        <function-ref name="clr" ref="0x4047e968" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin2" provided="1" ref="0x4045de48">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin2" ref="0x4045de48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4045c050" scoped=""/>
+        <function-ref name="isInput" ref="0x4045c130" scoped=""/>
+        <function-ref name="toggle" ref="0x4045c210" scoped=""/>
+        <function-ref name="isOutput" ref="0x4045c2f0" scoped=""/>
+        <function-ref name="get" ref="0x4045c3d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4045c4b0" scoped=""/>
+        <function-ref name="set" ref="0x4045c590" scoped=""/>
+        <function-ref name="clr" ref="0x4045c670" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin4" provided="1" ref="0x40467988">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin4" ref="0x40467988" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40467b60" scoped=""/>
+        <function-ref name="isInput" ref="0x40467c40" scoped=""/>
+        <function-ref name="toggle" ref="0x40467d20" scoped=""/>
+        <function-ref name="isOutput" ref="0x40467e00" scoped=""/>
+        <function-ref name="get" ref="0x40467ee0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40466010" scoped=""/>
+        <function-ref name="set" ref="0x404660f0" scoped=""/>
+        <function-ref name="clr" ref="0x404661d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin3" provided="1" ref="0x40474ac8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin3" ref="0x40474ac8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40474ca0" scoped=""/>
+        <function-ref name="isInput" ref="0x40474d80" scoped=""/>
+        <function-ref name="toggle" ref="0x40474e60" scoped=""/>
+        <function-ref name="isOutput" ref="0x40473010" scoped=""/>
+        <function-ref name="get" ref="0x404730f0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404731d0" scoped=""/>
+        <function-ref name="set" ref="0x404732b0" scoped=""/>
+        <function-ref name="clr" ref="0x40473390" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin1" provided="1" ref="0x4046b790">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin1" ref="0x4046b790" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4046b968" scoped=""/>
+        <function-ref name="isInput" ref="0x4046ba48" scoped=""/>
+        <function-ref name="toggle" ref="0x4046bb28" scoped=""/>
+        <function-ref name="isOutput" ref="0x4046bc08" scoped=""/>
+        <function-ref name="get" ref="0x4046bce8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4046bdc8" scoped=""/>
+        <function-ref name="set" ref="0x4046bea8" scoped=""/>
+        <function-ref name="clr" ref="0x40474010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin3" provided="1" ref="0x40467030">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin3" ref="0x40467030" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40467208" scoped=""/>
+        <function-ref name="isInput" ref="0x404672e8" scoped=""/>
+        <function-ref name="toggle" ref="0x404673c8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404674a8" scoped=""/>
+        <function-ref name="get" ref="0x40467588" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40467668" scoped=""/>
+        <function-ref name="set" ref="0x40467748" scoped=""/>
+        <function-ref name="clr" ref="0x40467828" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin7" provided="1" ref="0x40464e48">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin7" ref="0x40464e48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40463050" scoped=""/>
+        <function-ref name="isInput" ref="0x40463130" scoped=""/>
+        <function-ref name="toggle" ref="0x40463210" scoped=""/>
+        <function-ref name="isOutput" ref="0x404632f0" scoped=""/>
+        <function-ref name="get" ref="0x404633d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404634b0" scoped=""/>
+        <function-ref name="set" ref="0x40463590" scoped=""/>
+        <function-ref name="clr" ref="0x40463670" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin6" provided="1" ref="0x40482988">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin6" ref="0x40482988" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40482b60" scoped=""/>
+        <function-ref name="isInput" ref="0x40482c40" scoped=""/>
+        <function-ref name="toggle" ref="0x40482d20" scoped=""/>
+        <function-ref name="isOutput" ref="0x40482e00" scoped=""/>
+        <function-ref name="get" ref="0x40482ee0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40481010" scoped=""/>
+        <function-ref name="set" ref="0x404810f0" scoped=""/>
+        <function-ref name="clr" ref="0x404811d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin7" provided="1" ref="0x404584f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin7" ref="0x404584f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404586c8" scoped=""/>
+        <function-ref name="isInput" ref="0x404587a8" scoped=""/>
+        <function-ref name="toggle" ref="0x40458888" scoped=""/>
+        <function-ref name="isOutput" ref="0x40458968" scoped=""/>
+        <function-ref name="get" ref="0x40458a48" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40458b28" scoped=""/>
+        <function-ref name="set" ref="0x40458c08" scoped=""/>
+        <function-ref name="clr" ref="0x40458ce8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" name="IO" provided="1" ref="0x404b33b0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G3"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404b33b0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b3588" scoped=""/>
+        <function-ref name="isInput" ref="0x404b3668" scoped=""/>
+        <function-ref name="toggle" ref="0x404b3748" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b3828" scoped=""/>
+        <function-ref name="get" ref="0x404b3908" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b39e8" scoped=""/>
+        <function-ref name="set" ref="0x404b3ac8" scoped=""/>
+        <function-ref name="clr" ref="0x404b3ba8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin0" provided="1" ref="0x404776f8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin0" ref="0x404776f8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404778d0" scoped=""/>
+        <function-ref name="isInput" ref="0x404779b0" scoped=""/>
+        <function-ref name="toggle" ref="0x40477a90" scoped=""/>
+        <function-ref name="isOutput" ref="0x40477b70" scoped=""/>
+        <function-ref name="get" ref="0x40477c50" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40477d30" scoped=""/>
+        <function-ref name="set" ref="0x40477e10" scoped=""/>
+        <function-ref name="clr" ref="0x40477ef0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin1" provided="1" ref="0x40476090">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin1" ref="0x40476090" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40476268" scoped=""/>
+        <function-ref name="isInput" ref="0x40476348" scoped=""/>
+        <function-ref name="toggle" ref="0x40476428" scoped=""/>
+        <function-ref name="isOutput" ref="0x40476508" scoped=""/>
+        <function-ref name="get" ref="0x404765e8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404766c8" scoped=""/>
+        <function-ref name="set" ref="0x404767a8" scoped=""/>
+        <function-ref name="clr" ref="0x40476888" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin1" provided="1" ref="0x40452b80">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin1" ref="0x40452b80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40452d58" scoped=""/>
+        <function-ref name="isInput" ref="0x40452e38" scoped=""/>
+        <function-ref name="toggle" ref="0x40452f18" scoped=""/>
+        <function-ref name="isOutput" ref="0x4045b010" scoped=""/>
+        <function-ref name="get" ref="0x4045b0f0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4045b1d0" scoped=""/>
+        <function-ref name="set" ref="0x4045b2b0" scoped=""/>
+        <function-ref name="clr" ref="0x4045b390" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin6" provided="1" ref="0x40459ac8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin6" ref="0x40459ac8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40459ca0" scoped=""/>
+        <function-ref name="isInput" ref="0x40459d80" scoped=""/>
+        <function-ref name="toggle" ref="0x40459e60" scoped=""/>
+        <function-ref name="isOutput" ref="0x40458010" scoped=""/>
+        <function-ref name="get" ref="0x404580f0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404581d0" scoped=""/>
+        <function-ref name="set" ref="0x404582b0" scoped=""/>
+        <function-ref name="clr" ref="0x40458390" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin6" provided="1" ref="0x404644f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin6" ref="0x404644f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404646c8" scoped=""/>
+        <function-ref name="isInput" ref="0x404647a8" scoped=""/>
+        <function-ref name="toggle" ref="0x40464888" scoped=""/>
+        <function-ref name="isOutput" ref="0x40464968" scoped=""/>
+        <function-ref name="get" ref="0x40464a48" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40464b28" scoped=""/>
+        <function-ref name="set" ref="0x40464c08" scoped=""/>
+        <function-ref name="clr" ref="0x40464ce8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin2" provided="1" ref="0x40484330">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin2" ref="0x40484330" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40484508" scoped=""/>
+        <function-ref name="isInput" ref="0x404845e8" scoped=""/>
+        <function-ref name="toggle" ref="0x404846c8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404847a8" scoped=""/>
+        <function-ref name="get" ref="0x40484888" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40484968" scoped=""/>
+        <function-ref name="set" ref="0x40484a48" scoped=""/>
+        <function-ref name="clr" ref="0x40484b28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin7" provided="1" ref="0x40481330">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin7" ref="0x40481330" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40481508" scoped=""/>
+        <function-ref name="isInput" ref="0x404815e8" scoped=""/>
+        <function-ref name="toggle" ref="0x404816c8" scoped=""/>
+        <function-ref name="isOutput" ref="0x404817a8" scoped=""/>
+        <function-ref name="get" ref="0x40481888" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40481968" scoped=""/>
+        <function-ref name="set" ref="0x40481a48" scoped=""/>
+        <function-ref name="clr" ref="0x40481b28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin0" provided="1" ref="0x4046a3d8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin0" ref="0x4046a3d8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4046a5b0" scoped=""/>
+        <function-ref name="isInput" ref="0x4046a690" scoped=""/>
+        <function-ref name="toggle" ref="0x4046a770" scoped=""/>
+        <function-ref name="isOutput" ref="0x4046a850" scoped=""/>
+        <function-ref name="get" ref="0x4046a930" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4046aa10" scoped=""/>
+        <function-ref name="set" ref="0x4046aaf0" scoped=""/>
+        <function-ref name="clr" ref="0x4046abd0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin3" provided="1" ref="0x4045c7d0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin3" ref="0x4045c7d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4045c9a8" scoped=""/>
+        <function-ref name="isInput" ref="0x4045ca88" scoped=""/>
+        <function-ref name="toggle" ref="0x4045cb68" scoped=""/>
+        <function-ref name="isOutput" ref="0x4045cc48" scoped=""/>
+        <function-ref name="get" ref="0x4045cd28" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4045ce08" scoped=""/>
+        <function-ref name="set" ref="0x4045cee8" scoped=""/>
+        <function-ref name="clr" ref="0x40465010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin5" provided="1" ref="0x40465ac8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin5" ref="0x40465ac8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40465ca0" scoped=""/>
+        <function-ref name="isInput" ref="0x40465d80" scoped=""/>
+        <function-ref name="toggle" ref="0x40465e60" scoped=""/>
+        <function-ref name="isOutput" ref="0x40464010" scoped=""/>
+        <function-ref name="get" ref="0x404640f0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404641d0" scoped=""/>
+        <function-ref name="set" ref="0x404642b0" scoped=""/>
+        <function-ref name="clr" ref="0x40464390" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin1" provided="1" ref="0x4046ad30">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin1" ref="0x4046ad30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4046af08" scoped=""/>
+        <function-ref name="isInput" ref="0x40468010" scoped=""/>
+        <function-ref name="toggle" ref="0x404680f0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404681d0" scoped=""/>
+        <function-ref name="get" ref="0x404682b0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x40468390" scoped=""/>
+        <function-ref name="set" ref="0x40468470" scoped=""/>
+        <function-ref name="clr" ref="0x40468550" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" name="IO" provided="1" ref="0x404ac8f0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G1"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404ac8f0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404acac8" scoped=""/>
+        <function-ref name="isInput" ref="0x404acba8" scoped=""/>
+        <function-ref name="toggle" ref="0x404acc88" scoped=""/>
+        <function-ref name="isOutput" ref="0x404acd68" scoped=""/>
+        <function-ref name="get" ref="0x404ace48" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404acf28" scoped=""/>
+        <function-ref name="set" ref="0x404ab018" scoped=""/>
+        <function-ref name="clr" ref="0x404ab0f8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin5" provided="1" ref="0x4047f790">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin5" ref="0x4047f790" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4047f968" scoped=""/>
+        <function-ref name="isInput" ref="0x4047fa48" scoped=""/>
+        <function-ref name="toggle" ref="0x4047fb28" scoped=""/>
+        <function-ref name="isOutput" ref="0x4047fc08" scoped=""/>
+        <function-ref name="get" ref="0x4047fce8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4047fdc8" scoped=""/>
+        <function-ref name="set" ref="0x4047fea8" scoped=""/>
+        <function-ref name="clr" ref="0x4047e010" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" name="IO" provided="1" ref="0x404aadd8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G2"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404aadd8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b5010" scoped=""/>
+        <function-ref name="isInput" ref="0x404b50f0" scoped=""/>
+        <function-ref name="toggle" ref="0x404b51d0" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b52b0" scoped=""/>
+        <function-ref name="get" ref="0x404b5390" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b5470" scoped=""/>
+        <function-ref name="set" ref="0x404b5550" scoped=""/>
+        <function-ref name="clr" ref="0x404b5630" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" name="IO" provided="1" ref="0x404b08a0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G4"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404b08a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404b0a78" scoped=""/>
+        <function-ref name="isInput" ref="0x404b0b58" scoped=""/>
+        <function-ref name="toggle" ref="0x404b0c38" scoped=""/>
+        <function-ref name="isOutput" ref="0x404b0d18" scoped=""/>
+        <function-ref name="get" ref="0x404b0df8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404b0ed8" scoped=""/>
+        <function-ref name="set" ref="0x404bb010" scoped=""/>
+        <function-ref name="clr" ref="0x404bb0f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin5" provided="1" ref="0x40459170">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin5" ref="0x40459170" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40459348" scoped=""/>
+        <function-ref name="isInput" ref="0x40459428" scoped=""/>
+        <function-ref name="toggle" ref="0x40459508" scoped=""/>
+        <function-ref name="isOutput" ref="0x404595e8" scoped=""/>
+        <function-ref name="get" ref="0x404596c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404597a8" scoped=""/>
+        <function-ref name="set" ref="0x40459888" scoped=""/>
+        <function-ref name="clr" ref="0x40459968" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" name="IO" provided="1" ref="0x404af3e8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G0"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IO" ref="0x404af3e8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x404af5c0" scoped=""/>
+        <function-ref name="isInput" ref="0x404af6a0" scoped=""/>
+        <function-ref name="toggle" ref="0x404af780" scoped=""/>
+        <function-ref name="isOutput" ref="0x404af860" scoped=""/>
+        <function-ref name="get" ref="0x404af940" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404afa20" scoped=""/>
+        <function-ref name="set" ref="0x404afb00" scoped=""/>
+        <function-ref name="clr" ref="0x404afbe0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin3" provided="1" ref="0x4045be48">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin3" ref="0x4045be48" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x4045a050" scoped=""/>
+        <function-ref name="isInput" ref="0x4045a130" scoped=""/>
+        <function-ref name="toggle" ref="0x4045a210" scoped=""/>
+        <function-ref name="isOutput" ref="0x4045a2f0" scoped=""/>
+        <function-ref name="get" ref="0x4045a3d0" scoped=""/>
+        <function-ref name="makeOutput" ref="0x4045a4b0" scoped=""/>
+        <function-ref name="set" ref="0x4045a590" scoped=""/>
+        <function-ref name="clr" ref="0x4045a670" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" name="Pin7" provided="1" ref="0x40470170">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pin7" ref="0x40470170" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.GeneralIO" qname="GeneralIO"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="makeInput" ref="0x40470348" scoped=""/>
+        <function-ref name="isInput" ref="0x40470428" scoped=""/>
+        <function-ref name="toggle" ref="0x40470508" scoped=""/>
+        <function-ref name="isOutput" ref="0x404705e8" scoped=""/>
+        <function-ref name="get" ref="0x404706c8" scoped=""/>
+        <function-ref name="makeOutput" ref="0x404707a8" scoped=""/>
+        <function-ref name="set" ref="0x40470888" scoped=""/>
+        <function-ref name="clr" ref="0x40470968" scoped=""/>
+      </interface-functions>
+    </interface><component loc="40(HplAtm128GeneralIOC.PortD):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortD">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+        <short>
+ Generic component to expose a full 8-bit port of GPIO pins.</short>
+        <long>
+ Generic component to expose a full 8-bit port of GPIO pins.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <instance number="3">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+        <arguments>
+          <value cst="I:50">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:49">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:48">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin2" ref="0x40474170" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41057228" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin5" ref="0x40473e48" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410520b0" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin0" ref="0x4046cdc8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41024de8" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin3" ref="0x40474ac8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41056c08" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin6" ref="0x404717d0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41051a88" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin1" ref="0x4046b790" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410597f8" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin4" ref="0x404734f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410546c0" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin7" ref="0x40470170" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4104f538" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="40(HplAtm128GeneralIOC.PortE):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortE">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+        <short>
+ Generic component to expose a full 8-bit port of GPIO pins.</short>
+        <long>
+ Generic component to expose a full 8-bit port of GPIO pins.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <instance number="4">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+        <arguments>
+          <value cst="I:35">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:34">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:33">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin2" ref="0x404769e8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41095d70" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin5" ref="0x4047f790" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4108fc08" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin0" ref="0x404776f8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4105d938" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin3" ref="0x40475410" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410927f8" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin6" ref="0x4047e170" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4108d6c0" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin1" ref="0x40476090" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410963b0" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin4" ref="0x40475d68" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41090228" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin7" ref="0x4047eac8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4108b0b0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="40(HplAtm128GeneralIOC.PortF):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortF">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+        <short>
+ Generic component to expose a full 8-bit port of GPIO pins.</short>
+        <long>
+ Generic component to expose a full 8-bit port of GPIO pins.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <instance number="5">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+        <arguments>
+          <value cst="I:98">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:97">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:32">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin2" ref="0x40484330" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410d39e8" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin5" ref="0x40482030" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410ce9e8" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin0" ref="0x40485010" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4109a538" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin3" ref="0x40484c88" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410d1538" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin6" ref="0x40482988" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410cc538" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin1" ref="0x40485968" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41098010" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin4" ref="0x404836b0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410cf010" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin7" ref="0x40481330" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410ca010" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="40(HplAtm128GeneralIOC.PortA):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortA">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+        <short>
+ Generic component to expose a full 8-bit port of GPIO pins.</short>
+        <long>
+ Generic component to expose a full 8-bit port of GPIO pins.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <instance number="0">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+        <arguments>
+          <value cst="I:59">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:58">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:57">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin2" ref="0x4045b4f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40facd70" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin5" ref="0x40459170" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fa7c08" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin0" ref="0x40452228" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40faf978" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin3" ref="0x4045be48" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40faa7f8" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin6" ref="0x40459ac8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fa46c0" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin1" ref="0x40452b80" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fad3b0" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin4" ref="0x4045a7d0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fa8228" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin7" ref="0x404584f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fa20b0" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="40(HplAtm128GeneralIOC.PortB):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortB">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+        <short>
+ Generic component to expose a full 8-bit port of GPIO pins.</short>
+        <long>
+ Generic component to expose a full 8-bit port of GPIO pins.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <instance number="1">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+        <arguments>
+          <value cst="I:56">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:55">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:54">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin2" ref="0x4045de48" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fe39e8" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin5" ref="0x40465ac8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fde9e8" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin0" ref="0x4045eb00" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fe6538" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin3" ref="0x4045c7d0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fe1538" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin6" ref="0x404644f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fdc538" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin1" ref="0x4045d4f0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fe4010" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin4" ref="0x40465170" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fdf010" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin7" ref="0x40464e48" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x40fda010" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="40(HplAtm128GeneralIOC.PortC):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOC.PortC">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+        <short>
+ Generic component to expose a full 8-bit port of GPIO pins.</short>
+        <long>
+ Generic component to expose a full 8-bit port of GPIO pins.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <instance number="2">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOPortP" qname="HplAtm128GeneralIOPortP"/>
+        <arguments>
+          <value cst="I:53">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:52">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:51">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+        </arguments>
+      </instance>
+      <configuration/>
+      <wiring>
+        <wire loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin2" ref="0x404686b0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4101c7f8" scoped=""/></to>
+        </wire>
+        <wire loc="71:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin5" ref="0x40466330" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410166c0" scoped=""/></to>
+        </wire>
+        <wire loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin0" ref="0x4046a3d8" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4101f418" scoped=""/></to>
+        </wire>
+        <wire loc="69:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin3" ref="0x40467030" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4101a228" scoped=""/></to>
+        </wire>
+        <wire loc="72:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin6" ref="0x40466c88" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x410140b0" scoped=""/></to>
+        </wire>
+        <wire loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin1" ref="0x4046ad30" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x4101ede0" scoped=""/></to>
+        </wire>
+        <wire loc="70:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin4" ref="0x40467988" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41019c08" scoped=""/></to>
+        </wire>
+        <wire loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOPortP.nc">
+          <from><interface-ref name="Pin7" ref="0x4046f6b0" scoped=""/></from>
+          <to><interface-ref name="IO" ref="0x41013a88" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component><component loc="42(HplAtm128GeneralIOC.G1):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G1">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
+        <short>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used).</short>
+        <long>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used). This can be used for ports F-G.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance number="9">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOSlowPinP"/>
+        <arguments>
+          <value cst="I:101">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:100">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:99">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:1">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="42(HplAtm128GeneralIOC.G0):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G0">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
+        <short>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used).</short>
+        <long>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used). This can be used for ports F-G.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance number="8">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOSlowPinP"/>
+        <arguments>
+          <value cst="I:101">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:100">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:99">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:0">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="42(HplAtm128GeneralIOC.G3):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G3">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
+        <short>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used).</short>
+        <long>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used). This can be used for ports F-G.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance number="11">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOSlowPinP"/>
+        <arguments>
+          <value cst="I:101">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:100">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:99">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:3">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="42(HplAtm128GeneralIOC.G2):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G2">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
+        <short>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used).</short>
+        <long>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used). This can be used for ports F-G.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance number="10">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOSlowPinP"/>
+        <arguments>
+          <value cst="I:101">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:100">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:99">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:2">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="42(HplAtm128GeneralIOC.G4):/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc" nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOC.G4">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128GeneralIOSlowPinP.nc">
+        <short>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used).</short>
+        <long>
+ Generic pin access for pins not mapped into I/O space (for which the
+ sbi, cbi instructions cannot be used). This can be used for ports F-G.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance number="12">
+        <component-ref nicename="tos.chips.atm128.pins.HplAtm128GeneralIOSlowPinP" qname="HplAtm128GeneralIOSlowPinP"/>
+        <arguments>
+          <value cst="I:101">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:100">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:99">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </value>
+          <value cst="I:4">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component></referenced></component>

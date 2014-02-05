@@ -1,0 +1,401 @@
+DEBUG (1): Booted
+DEBUG (1): periodic checker set to 8400
+DEBUG (1): Radio On
+DEBUG (2): Booted
+DEBUG (2): periodic checker set to 7100
+DEBUG (2): Radio On
+DEBUG (3): Booted
+DEBUG (3): periodic checker set to 8200
+DEBUG (3): Radio On
+DEBUG (4): Booted
+DEBUG (4): periodic checker set to 8900
+DEBUG (4): Radio On
+DEBUG (5): Booted
+DEBUG (5): periodic checker set to 7600
+DEBUG (5): Radio On
+DEBUG (6): Booted
+DEBUG (6): periodic checker set to 8300
+DEBUG (6): Radio On
+DEBUG (7): Booted
+DEBUG (7): periodic checker set to 7400
+DEBUG (7): Radio On
+DEBUG (8): Booted
+DEBUG (8): periodic checker set to 8100
+DEBUG (8): Radio On
+DEBUG (9): Booted
+DEBUG (9): periodic checker set to 8800
+DEBUG (9): Radio On
+DEBUG (10): Booted
+DEBUG (10): periodic checker set to 7500
+DEBUG (10): Radio On
+DEBUG (11): Booted
+DEBUG (11): periodic checker set to 8600
+DEBUG (11): Radio On
+DEBUG (1):  TTL no 15, src no 1, seq no 0, dest no 1 time no 1955718
+DEBUG (1): Packet from 1 has arrived! Msg: 5Y 
+DEBUG (1): A Command has been Issued.
+DEBUG (1): Command Type: Test Server
+DEBUG (3):  TTL no 15, src no 3, seq no 0, dest no 3 time no 2108347
+DEBUG (3): Packet from 3 has arrived! Msg: 83acerpa  
+DEBUG (3): A Command has been Issued.
+DEBUG (3): Command Type: Test Client End
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 2108699
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 2112700
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 0, dest no 3 time no 2119768
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 2120396
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 1, dest no 1 time no 2124678
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 0, dest no 3 time no 2129179
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (4):  TTL no 15, src no 4, seq no 0, dest no 4 time no 2361194
+DEBUG (4): Packet from 4 has arrived! Msg: 83verickson  
+DEBUG (4): A Command has been Issued.
+DEBUG (4): Command Type: Test Client End
+DEBUG (1):  TTL no 14, src no 4, seq no 0, dest no 1 time no 2364511
+DEBUG (1): Packet from 4 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 4, seq no 0, dest no 1 time no 2370181
+DEBUG (1): Packet from 4 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 4, seq no 0, dest no 1 time no 2376604
+DEBUG (1): Packet from 4 has arrived! Msg: ) 
+DEBUG (4):  TTL no 14, src no 1, seq no 0, dest no 4 time no 2379300
+DEBUG (4): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 4, seq no 0, dest no 1 time no 2380002
+DEBUG (1): Packet from 4 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 4, seq no 1, dest no 1 time no 2383062
+DEBUG (1): Packet from 4 has arrived! Msg: ) 
+DEBUG (4):  TTL no 14, src no 1, seq no 0, dest no 4 time no 2386876
+DEBUG (4): Packet from 1 has arrived! Msg: ) 
+DEBUG (5):  TTL no 15, src no 5, seq no 0, dest no 5 time no 2611410
+DEBUG (5): Packet from 5 has arrived! Msg: 83dwinkler2  
+DEBUG (5): A Command has been Issued.
+DEBUG (5): Command Type: Test Client End
+DEBUG (1):  TTL no 14, src no 5, seq no 0, dest no 1 time no 2611962
+DEBUG (1): Packet from 5 has arrived! Msg: ) 
+DEBUG (5):  TTL no 14, src no 1, seq no 0, dest no 5 time no 2612597
+DEBUG (5): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 5, seq no 0, dest no 1 time no 2613167
+DEBUG (1): Packet from 5 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 5, seq no 1, dest no 1 time no 2616655
+DEBUG (1): Packet from 5 has arrived! Msg: ) 
+DEBUG (5):  TTL no 14, src no 1, seq no 0, dest no 5 time no 2617747
+DEBUG (5): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 15, src no 6, seq no 0, dest no 6 time no 2862606
+DEBUG (6): Packet from 6 has arrived! Msg: 83abeltran2  
+DEBUG (6): A Command has been Issued.
+DEBUG (6): Command Type: Test Client End
+DEBUG (1):  TTL no 14, src no 6, seq no 0, dest no 1 time no 2863187
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 0, dest no 1 time no 2868271
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 0, dest no 6 time no 2873039
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 0, dest no 1 time no 2873084
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 0, dest no 6 time no 2873553
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 0, dest no 1 time no 2873693
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 1, dest no 1 time no 2874266
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 1, dest no 1 time no 2880625
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 0, dest no 6 time no 2886220
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 1, dest no 1 time no 2886656
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 0, dest no 6 time no 2890116
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 15, src no 3, seq no 0, dest no 3 time no 3114004
+DEBUG (3): Packet from 3 has arrived! Msg: aHello World!
+ 
+DEBUG (3): A Command has been Issued.
+DEBUG (3): Command Type: Test Client End
+DEBUG (1):  TTL no 14, src no 3, seq no 2, dest no 1 time no 3120687
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 0, dest no 3 time no 3124623
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 20, dest no 3 time no 3130541
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 3131007
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (5):  TTL no 14, src no 1, seq no 20, dest no 5 time no 3131818
+DEBUG (5): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 5, seq no 0, dest no 1 time no 3132402
+DEBUG (1): Packet from 5 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 20, dest no 6 time no 3132434
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 0, dest no 1 time no 3133068
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (5):  TTL no 14, src no 1, seq no 20, dest no 5 time no 3141289
+DEBUG (5): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 20, dest no 6 time no 3141835
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 0, dest no 1 time no 3142415
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (4):  TTL no 14, src no 1, seq no 20, dest no 4 time no 3146011
+DEBUG (4): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 4, seq no 0, dest no 1 time no 3146646
+DEBUG (1): Packet from 4 has arrived! Msg: ) 
+DEBUG (3):  TTL no 15, src no 3, seq no 0, dest no 3 time no 3370411
+DEBUG (3): Packet from 3 has arrived! Msg: babeltran2 Hi!
+ 
+DEBUG (3): A Command has been Issued.
+DEBUG (3): Command Type: Test Client End
+DEBUG (1):  TTL no 14, src no 3, seq no 3, dest no 1 time no 3373191
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 3, dest no 1 time no 3378553
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 3, dest no 1 time no 3379210
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 0, dest no 3 time no 3382724
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 0, dest no 3 time no 3383852
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 32, dest no 6 time no 3388539
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 6, seq no 0, dest no 1 time no 3389210
+DEBUG (1): Packet from 6 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3401138
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3404683
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3411878
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3417163
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3427224
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3430281
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3435943
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3450624
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3462885
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3468008
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3477564
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3482426
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3487072
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3496697
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3500267
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3508665
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3512844
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3516254
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3524588
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3529564
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3544276
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3549102
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3561086
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3572909
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3577789
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3583426
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3589666
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3593834
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3598580
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3607272
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3620395
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 15, src no 3, seq no 0, dest no 3 time no 3620791
+DEBUG (3): Packet from 3 has arrived! Msg: c 
+DEBUG (3): A Command has been Issued.
+DEBUG (3): Command Type: Test Client End
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3624463
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 4, dest no 1 time no 3625018
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3628740
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 4, dest no 1 time no 3630645
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 4, dest no 1 time no 3636103
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 0, dest no 3 time no 3637882
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 32, dest no 3 time no 3642177
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 3642850
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3643525
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 0, dest no 3 time no 3644686
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 32, dest no 3 time no 3652844
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 3653404
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 32, dest no 3 time no 3658205
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 3658515
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 96, dest no 3 time no 3663536
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3664137
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 64, dest no 3 time no 3669660
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 3670236
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 64, dest no 3 time no 3682593
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3683264
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 96, dest no 3 time no 3688483
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 3688511
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 104, dest no 3 time no 3688999
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (1):  TTL no 14, src no 3, seq no 0, dest no 1 time no 3689181
+DEBUG (1): Packet from 3 has arrived! Msg: ) 
+DEBUG (3):  TTL no 14, src no 1, seq no 96, dest no 3 time no 3693359
+DEBUG (3): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3693986
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3703552
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3712484
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3720450
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3729908
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3734030
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3739489
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3748402
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3753313
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3761718
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3765362
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3770489
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3778095
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3783545
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3791351
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3794992
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3797766
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3804798
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3809499
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3819322
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3823468
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3843918
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3859484
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3867952
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3873318
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3884791
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3888890
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3898847
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3901683
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3917041
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3920752
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3934450
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3939698
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3947263
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3951618
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3955432
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3963832
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3969887
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3976956
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3980561
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3985318
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 3996946
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4006963
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4011745
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4021698
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4026996
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4035816
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4039362
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4043481
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4053309
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4061688
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4069910
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4074085
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4087773
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4106499
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4131982
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4135062
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4145648
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4148375
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4152809
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4161284
+DEBUG (6): Packet from 1 has arrived! Msg: ) 
+DEBUG (6):  TTL no 14, src no 1, seq no 36, dest no 6 time no 4166444
+DEBUG (6): Packet from 1 has arrived! Msg: ) 

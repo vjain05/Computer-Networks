@@ -1,0 +1,5 @@
+digraph "lib.modules.FloodSendC" {
+  n0x40f6c270 [shape=ellipse, style=filled, label="FloodSend", fontsize=12];
+  "FloodSendP" [fontsize=12, shape=box, URL="../chtml/lib.modules.FloodSendP.html"];
+  "n0x40f6c270" -> "FloodSendP" [label="FloodSend", URL="../ihtml/lib.interfaces.FloodSend.html", fontsize=10];
+}

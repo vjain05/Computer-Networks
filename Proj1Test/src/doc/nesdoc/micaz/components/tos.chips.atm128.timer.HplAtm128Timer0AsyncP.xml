@@ -1,0 +1,98 @@
+<?xml version="1.0" ?><component loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer0AsyncP.nc" nicename="tos.chips.atm128.timer.HplAtm128Timer0AsyncP" qname="HplAtm128Timer0AsyncP" safe="">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer0AsyncP.nc">
+        <short>
+ HPL interface to Atmega128 timer 0 in ASYNC mode.</short>
+        <long>
+ HPL interface to Atmega128 timer 0 in ASYNC mode. This is a specialised
+ HPL component that assumes that timer 0 is used in ASYNC mode and
+ includes some workarounds for some of the weirdnesses (delayed overflow
+ interrupt) of that mode.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer0AsyncP.nc" name="TimerCtrl" provided="1" ref="0x4071caf0">
+      <component-ref nicename="tos.chips.atm128.timer.HplAtm128Timer0AsyncP" qname="HplAtm128Timer0AsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="TimerCtrl" ref="0x4071caf0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128TimerCtrl8" qname="HplAtm128TimerCtrl8"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="getControl" ref="0x4071ccc8" scoped=""/>
+        <function-ref name="getInterruptFlag" ref="0x4071cda8" scoped=""/>
+        <function-ref name="getInterruptMask" ref="0x4071ce88" scoped=""/>
+        <function-ref name="setInterruptMask" ref="0x4071a010" scoped=""/>
+        <function-ref name="setInterruptFlag" ref="0x4071a0f0" scoped=""/>
+        <function-ref name="setControl" ref="0x4071a1d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="52:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer0AsyncP.nc" name="McuPowerOverride" provided="1" ref="0x40718010">
+      <component-ref nicename="tos.chips.atm128.timer.HplAtm128Timer0AsyncP" qname="HplAtm128Timer0AsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="McuPowerOverride" ref="0x40718010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.McuPowerOverride" qname="McuPowerOverride"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="lowestState" ref="0x407181e8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer0AsyncP.nc" name="TimerAsync" provided="1" ref="0x40718470">
+      <component-ref nicename="tos.chips.atm128.timer.HplAtm128Timer0AsyncP" qname="HplAtm128Timer0AsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="TimerAsync" ref="0x40718470" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128TimerAsync" qname="HplAtm128TimerAsync"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="controlBusy" ref="0x40718648" scoped=""/>
+        <function-ref name="compareBusy" ref="0x40718728" scoped=""/>
+        <function-ref name="setTimer0Asynchronous" ref="0x40718808" scoped=""/>
+        <function-ref name="countBusy" ref="0x407188e8" scoped=""/>
+        <function-ref name="getAssr" ref="0x407189c8" scoped=""/>
+        <function-ref name="setAssr" ref="0x40718aa8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="51:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer0AsyncP.nc" name="Compare" provided="1" ref="0x4071a4f8">
+      <component-ref nicename="tos.chips.atm128.timer.HplAtm128Timer0AsyncP" qname="HplAtm128Timer0AsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Compare" ref="0x4071a4f8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Compare" qname="HplAtm128Compare"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="test" ref="0x40719a48" scoped=""/>
+        <function-ref name="fired" ref="0x40719068" scoped=""/>
+        <function-ref name="get" ref="0x4071ab40" scoped=""/>
+        <function-ref name="reset" ref="0x407192e0" scoped=""/>
+        <function-ref name="isOn" ref="0x40719cc0" scoped=""/>
+        <function-ref name="set" ref="0x4071adb8" scoped=""/>
+        <function-ref name="start" ref="0x40719558" scoped=""/>
+        <function-ref name="stop" ref="0x407197d0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/timer/HplAtm128Timer0AsyncP.nc" name="Timer" provided="1" ref="0x4070e7a0">
+      <component-ref nicename="tos.chips.atm128.timer.HplAtm128Timer0AsyncP" qname="HplAtm128Timer0AsyncP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Timer" ref="0x4070e7a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.timer.HplAtm128Timer" qname="HplAtm128Timer"/>
+        <arguments>
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="off" ref="0x4071c288" scoped=""/>
+        <function-ref name="test" ref="0x4071dd08" scoped=""/>
+        <function-ref name="get" ref="0x4070ede8" scoped=""/>
+        <function-ref name="setScale" ref="0x4071c500" scoped=""/>
+        <function-ref name="getScale" ref="0x4071c7a0" scoped=""/>
+        <function-ref name="reset" ref="0x4071d5a0" scoped=""/>
+        <function-ref name="overflow" ref="0x4071d328" scoped=""/>
+        <function-ref name="isOn" ref="0x4071c010" scoped=""/>
+        <function-ref name="set" ref="0x4071d088" scoped=""/>
+        <function-ref name="start" ref="0x4071d818" scoped=""/>
+        <function-ref name="stop" ref="0x4071da90" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

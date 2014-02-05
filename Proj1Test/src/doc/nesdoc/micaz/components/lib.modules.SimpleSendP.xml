@@ -1,0 +1,154 @@
+<?xml version="1.0" ?><component loc="11:lib/modules/SimpleSendP.nc" nicename="lib.modules.SimpleSendP" qname="SimpleSendP">
+      <documentation loc="1:lib/modules/SimpleSendP.nc">
+        <short>
+ ANDES Lab - University of California, Merced
+ 
+ </short>
+        <long>
+ ANDES Lab - University of California, Merced
+ 
+ @author UCM ANDES Lab
+ @date   2013/09/22
+ 
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="12:lib/modules/SimpleSendP.nc" name="SimpleSend" provided="1" ref="0x40e0a7e8">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="SimpleSend" ref="0x40e0a7e8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="lib.interfaces.SimpleSend" qname="SimpleSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40e0a9c0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="15:lib/modules/SimpleSendP.nc" name="Pool" provided="0" ref="0x40dfb240">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Pool" ref="0x40dfb240" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Pool" qname="Pool"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:68"><struct-ref name="sendInfo" ref="0x4051ba18"/>
+            <typename><typedef-ref name="sendInfo" ref="0x4051a070"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x40e013a0" scoped=""/>
+        <function-ref name="maxSize" ref="0x40dfbd18" scoped=""/>
+        <function-ref name="empty" ref="0x40dfb868" scoped=""/>
+        <function-ref name="put" ref="0x40e01010" scoped=""/>
+        <function-ref name="size" ref="0x40dfbac0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="14:lib/modules/SimpleSendP.nc" name="Queue" provided="0" ref="0x40e07010">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Queue" ref="0x40e07010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Queue" qname="Queue"/>
+        <arguments>
+          <type-pointer alignment="I:1" size="I:2">
+            <type-tag alignment="I:1" size="I:68"><struct-ref name="sendInfo" ref="0x4051ba18"/>
+              <typename><typedef-ref name="sendInfo" ref="0x4051a070"/></typename>
+            </type-tag>
+          </type-pointer>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="head" ref="0x40e07d40" scoped=""/>
+        <function-ref name="enqueue" ref="0x40e06458" scoped=""/>
+        <function-ref name="element" ref="0x40e067a8" scoped=""/>
+        <function-ref name="maxSize" ref="0x40e07ae8" scoped=""/>
+        <function-ref name="dequeue" ref="0x40e060e8" scoped=""/>
+        <function-ref name="empty" ref="0x40e07638" scoped=""/>
+        <function-ref name="size" ref="0x40e07890" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="19:lib/modules/SimpleSendP.nc" name="Packet" provided="0" ref="0x40dfaaf8">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Packet" ref="0x40dfaaf8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Packet" qname="Packet"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="clear" ref="0x40dfacd0" scoped=""/>
+        <function-ref name="payloadLength" ref="0x40dfadb0" scoped=""/>
+        <function-ref name="getPayload" ref="0x40dfae90" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40df9010" scoped=""/>
+        <function-ref name="setPayloadLength" ref="0x40df90f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="21:lib/modules/SimpleSendP.nc" name="AMSend" provided="0" ref="0x40df9ee0">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="AMSend" ref="0x40df9ee0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMSend" qname="AMSend"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="send" ref="0x40df80e0" scoped=""/>
+        <function-ref name="getPayload" ref="0x40df81c0" scoped=""/>
+        <function-ref name="maxPayloadLength" ref="0x40df82a0" scoped=""/>
+        <function-ref name="cancel" ref="0x40df8380" scoped=""/>
+        <function-ref name="sendDone" ref="0x40df8460" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="23:lib/modules/SimpleSendP.nc" name="Random" provided="0" ref="0x40df8660">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Random" ref="0x40df8660" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Random" qname="Random"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="rand16" ref="0x40df8838" scoped=""/>
+        <function-ref name="rand32" ref="0x40df8918" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="53:lib/modules/SimpleSendP.nc" name="sendBufferTask" provided="0" ref="0x40df3dc0">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="sendBufferTask" ref="0x40df3dc0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.TaskBasic" qname="TaskBasic"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="postTask" ref="0x40e22010" scoped=""/>
+        <function-ref name="runTask" ref="0x40e220f0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="20:lib/modules/SimpleSendP.nc" name="AMPacket" provided="0" ref="0x40df92a8">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="AMPacket" ref="0x40df92a8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.AMPacket" qname="AMPacket"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="group" ref="0x40df9480" scoped=""/>
+        <function-ref name="source" ref="0x40df9560" scoped=""/>
+        <function-ref name="address" ref="0x40df9640" scoped=""/>
+        <function-ref name="destination" ref="0x40df9720" scoped=""/>
+        <function-ref name="setSource" ref="0x40df9800" scoped=""/>
+        <function-ref name="setDestination" ref="0x40df98e0" scoped=""/>
+        <function-ref name="type" ref="0x40df99c0" scoped=""/>
+        <function-ref name="setType" ref="0x40df9aa0" scoped=""/>
+        <function-ref name="isForMe" ref="0x40df9b80" scoped=""/>
+        <function-ref name="setGroup" ref="0x40df9c60" scoped=""/>
+        <function-ref name="localGroup" ref="0x40df9d40" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="17:lib/modules/SimpleSendP.nc" name="sendTimer" provided="0" ref="0x40e018d0">
+      <component-ref nicename="lib.modules.SimpleSendP" qname="SimpleSendP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="sendTimer" ref="0x40e018d0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Timer" qname="Timer"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a4c50"/>
+            <typename><typedef-ref name="TMilli" ref="0x403a4e18"/></typename>
+          </type-tag>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40dfa3d8" scoped=""/>
+        <function-ref name="fired" ref="0x40dfc678" scoped=""/>
+        <function-ref name="startPeriodicAt" ref="0x40dfcd80" scoped=""/>
+        <function-ref name="isOneShot" ref="0x40dfcb28" scoped=""/>
+        <function-ref name="getdt" ref="0x40dfa888" scoped=""/>
+        <function-ref name="gett0" ref="0x40dfa630" scoped=""/>
+        <function-ref name="isRunning" ref="0x40dfc8d0" scoped=""/>
+        <function-ref name="startPeriodic" ref="0x40e01ef8" scoped=""/>
+        <function-ref name="startOneShotAt" ref="0x40dfa0b8" scoped=""/>
+        <function-ref name="startOneShot" ref="0x40dfc1a0" scoped=""/>
+        <function-ref name="stop" ref="0x40dfc420" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

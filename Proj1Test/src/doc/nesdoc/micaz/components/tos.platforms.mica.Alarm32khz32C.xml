@@ -1,0 +1,256 @@
+<?xml version="1.0" ?><component abstract="" loc="26:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Alarm32khz32C.nc" nicename="tos.platforms.mica.Alarm32khz32C" qname="Alarm32khz32C">
+      <documentation loc="11:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Alarm32khz32C.nc">
+        <short>
+ 32-bit 32kHz Alarm component as per TEP102 HAL guidelines.</short>
+        <long>
+ 32-bit 32kHz Alarm component as per TEP102 HAL guidelines. The mica
+ family 32kHz Alarm is built on hardware timer 1, and actually runs at
+ CPU frequency / 256. You can use the MeasureClockC.cyclesPerJiffy()
+ command to figure out the exact frequency.
+ &lt;p&gt;
+ Upto three of these alarms can be created (one per hardware compare
+ register). Note that creating one of these Alarms consumes a 16-bit
+ 32kHz Alarm (see Alarm32khz16C).
+
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <parameters>
+      </parameters>
+      <configuration/>
+      <wiring>
+        <wire loc="36:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Alarm32khz32C.nc">
+          <from><interface-ref name="Alarm" ref="0x406d8988" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x407e1a80" scoped=""/></to>
+        </wire>
+        <wire loc="37:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Alarm32khz32C.nc">
+          <from><interface-ref name="AlarmFrom" ref="0x40817870" scoped=""/></from>
+          <to><interface-ref name="Alarm" ref="0x406e6c68" scoped=""/></to>
+        </wire>
+        <wire loc="38:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Alarm32khz32C.nc">
+          <from><interface-ref name="Counter" ref="0x408195d8" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x407df010" scoped=""/></to>
+        </wire>
+      </wiring>
+    <specification><interface loc="28:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Alarm32khz32C.nc" name="Alarm" provided="1" ref="0x406d8988">
+      <component-ref nicename="tos.platforms.mica.Alarm32khz32C" qname="Alarm32khz32C"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Alarm" ref="0x406d8988" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="T32khz" ref="0x403a3268"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x4020e848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x406e9e40" scoped=""/>
+        <function-ref name="fired" ref="0x406e9610" scoped=""/>
+        <function-ref name="startAt" ref="0x406e9b00" scoped=""/>
+        <function-ref name="isRunning" ref="0x406e9888" scoped=""/>
+        <function-ref name="getAlarm" ref="0x406e80d8" scoped=""/>
+        <function-ref name="start" ref="0x406e90f8" scoped=""/>
+        <function-ref name="stop" ref="0x406e9398" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced><interface loc="68:/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformAlarmC.nc" name="Counter" provided="0" ref="0x408195d8">
+      <component-ref nicename="tos.lib.timer.TransformAlarmC" qname="Alarm32khz32C.Transform32"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Counter" ref="0x408195d8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="T32khz" ref="0x403a3268"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x4020e848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x40819d28" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x40817288" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x40817010" scoped=""/>
+        <function-ref name="overflow" ref="0x40817500" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="24:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc" name="Counter" provided="1" ref="0x407df010">
+      <component-ref nicename="tos.platforms.mica.Counter32khz32C" qname="Counter32khz32C"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Counter" ref="0x407df010" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Counter" qname="Counter"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="T32khz" ref="0x403a3268"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x4020e848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="get" ref="0x407df760" scoped=""/>
+        <function-ref name="clearOverflow" ref="0x407dfc50" scoped=""/>
+        <function-ref name="isOverflowPending" ref="0x407df9d8" scoped=""/>
+        <function-ref name="overflow" ref="0x407dfec8" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="61:/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformAlarmC.nc" name="Alarm" provided="1" ref="0x407e1a80">
+      <component-ref nicename="tos.lib.timer.TransformAlarmC" qname="Alarm32khz32C.Transform32"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Alarm" ref="0x407e1a80" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="T32khz" ref="0x403a3268"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x4020e848"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40819010" scoped=""/>
+        <function-ref name="fired" ref="0x407fe718" scoped=""/>
+        <function-ref name="startAt" ref="0x407fec08" scoped=""/>
+        <function-ref name="isRunning" ref="0x407fe990" scoped=""/>
+        <function-ref name="getAlarm" ref="0x40819288" scoped=""/>
+        <function-ref name="start" ref="0x407fe200" scoped=""/>
+        <function-ref name="stop" ref="0x407fe4a0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="30:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc" name="Alarm" provided="1" ref="0x406e6c68">
+      <component-ref nicename="tos.platforms.mica.AlarmOne16C" qname="Alarm32khz32C.Alarm16"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Alarm" ref="0x406e6c68" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x407cb150" scoped=""/>
+        <function-ref name="fired" ref="0x407cd908" scoped=""/>
+        <function-ref name="startAt" ref="0x407cddf8" scoped=""/>
+        <function-ref name="isRunning" ref="0x407cdb80" scoped=""/>
+        <function-ref name="getAlarm" ref="0x407cb3c8" scoped=""/>
+        <function-ref name="start" ref="0x407cd3f0" scoped=""/>
+        <function-ref name="stop" ref="0x407cd690" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="73:/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformAlarmC.nc" name="AlarmFrom" provided="0" ref="0x40817870">
+      <component-ref nicename="tos.lib.timer.TransformAlarmC" qname="Alarm32khz32C.Transform32"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="AlarmFrom" ref="0x40817870" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.lib.timer.Alarm" qname="Alarm"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+        </arguments>
+      </instance>
+      <interface-functions>
+        <function-ref name="getNow" ref="0x40816d58" scoped=""/>
+        <function-ref name="fired" ref="0x40816528" scoped=""/>
+        <function-ref name="startAt" ref="0x40816a18" scoped=""/>
+        <function-ref name="isRunning" ref="0x408167a0" scoped=""/>
+        <function-ref name="getAlarm" ref="0x40814010" scoped=""/>
+        <function-ref name="start" ref="0x40816010" scoped=""/>
+        <function-ref name="stop" ref="0x408162b0" scoped=""/>
+      </interface-functions>
+    </interface><component abstract="" loc="28(Alarm32khz32C.Alarm16):/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc" nicename="tos.platforms.mica.AlarmOne16C" qname="Alarm32khz32C.Alarm16">
+      <documentation loc="11:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/AlarmOne16C.nc">
+        <short>
+ 16-bit 32kHz Alarm component as per TEP102 HAL guidelines.</short>
+        <long>
+ 16-bit 32kHz Alarm component as per TEP102 HAL guidelines. The mica
+ family 32kHz Alarm is built on hardware timer 1, and actually runs at
+ CPU frequency / 256. You can use the MeasureClockC.cyclesPerJiffy()
+ command to figure out the exact frequency.
+ &lt;p&gt;
+ Assumes an ~8MHz CPU clock, replace this component if you are running at
+ a radically different frequency.
+ &lt;p&gt;
+ Upto three of these alarms can be created (one per hardware compare
+ register).
+
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.platforms.mica.AlarmOne16C" qname="AlarmOne16C"/>
+      </instance>
+      <configuration/>
+    </component><component abstract="" loc="51(Alarm32khz32C.Transform32):/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformAlarmC.nc" nicename="tos.lib.timer.TransformAlarmC" qname="Alarm32khz32C.Transform32">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/lib/timer/TransformAlarmC.nc">
+        <short>
+ TransformAlarmC decreases precision and/or widens an Alarm.</short>
+        <long>
+ TransformAlarmC decreases precision and/or widens an Alarm.  An already
+ widened Counter component is used to help.
+
+ &lt;p&gt;See TEP102 for more details.
+ @param to_precision_tag A type indicating the precision of the transformed
+   Alarm.
+ @param to_size_type The type for the width of the transformed Alarm.
+ @param from_precision_tag A type indicating the precision of the original
+   Alarm.
+ @param from_size_type The type for the width of the original Alarm.
+ @param bit_shift_right Original time units will be 2 to the power 
+   &lt;code&gt;bit_shift_right&lt;/code&gt; larger than transformed time units.
+
+ @author Cory Sharp &lt;cssharp@eecs.berkeley.edu&gt;
+</long>
+      </documentation>
+      <instance>
+        <component-ref nicename="tos.lib.timer.TransformAlarmC" qname="TransformAlarmC"/>
+        <arguments>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="T32khz" ref="0x403a3268"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned long" size="I:4" unsigned="">
+            <typename><typedef-ref name="uint32_t" ref="0x4020e848"/></typename>
+          </type-int>
+          <type-tag alignment="I:1" size="I:2"><struct-ref ref="0x403a30a0"/>
+            <typename><typedef-ref name="TOne" ref="0x403c4be0"/></typename>
+          </type-tag>
+          <type-int alignment="I:1" cname="unsigned short" size="I:2" unsigned="">
+            <typename><typedef-ref name="uint16_t" ref="0x4020e1e8"/></typename>
+          </type-int>
+          <value cst="I:0">
+            <type-int alignment="I:1" cname="int" size="I:2"/>
+          </value>
+        </arguments>
+      </instance>
+      <module/>
+    </component><component loc="22:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc" nicename="tos.platforms.mica.Counter32khz32C" qname="Counter32khz32C">
+      <documentation loc="11:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc">
+        <short>
+ 32-bit 32kHz Counter component as per TEP102 HAL guidelines.</short>
+        <long>
+ 32-bit 32kHz Counter component as per TEP102 HAL guidelines. The mica
+ family 32kHz clock is built on hardware timer 1, and actually runs at
+ CPU frequency / 256. You can use the MeasureClockC.cyclesPerJiffy()
+ command to figure out the exact frequency.
+
+ @author David Gay &lt;dgay@intel-research.net&gt;
+</long>
+      </documentation>
+      <configuration/>
+      <wiring>
+        <wire loc="33:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc">
+          <from><interface-ref name="Counter" ref="0x407df010" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x407da7f0" scoped=""/></to>
+        </wire>
+        <wire loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/platforms/mica/Counter32khz32C.nc">
+          <from><interface-ref name="CounterFrom" ref="0x40801ae8" scoped=""/></from>
+          <to><interface-ref name="Counter" ref="0x407dea08" scoped=""/></to>
+        </wire>
+      </wiring>
+    </component></referenced></component>

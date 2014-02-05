@@ -1,0 +1,86 @@
+<?xml version="1.0" ?><component loc="41:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP" safe="">
+      <documentation loc="34:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc">
+        <short>
+ Interrupt interface access for interrupt capable GPIO pins.</short>
+        <long>
+ Interrupt interface access for interrupt capable GPIO pins.
+ Exposes just the interrupt vector routine for 
+ easy linking to generic components.
+
+ @author Martin Turon &lt;mturon@xbow.com&gt;
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="49:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" name="IntSig6" provided="1" ref="0x4085ec50">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IntSig6" ref="0x4085ec50" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSig" qname="HplAtm128InterruptSig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x4085ee28" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="44:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" name="IntSig1" provided="1" ref="0x4085c5b8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IntSig1" ref="0x4085c5b8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSig" qname="HplAtm128InterruptSig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x4085c790" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="47:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" name="IntSig4" provided="1" ref="0x4085e360">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IntSig4" ref="0x4085e360" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSig" qname="HplAtm128InterruptSig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x4085e538" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="50:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" name="IntSig7" provided="1" ref="0x4085b1a0">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IntSig7" ref="0x4085b1a0" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSig" qname="HplAtm128InterruptSig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x4085b378" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="45:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" name="IntSig2" provided="1" ref="0x4085ca30">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IntSig2" ref="0x4085ca30" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSig" qname="HplAtm128InterruptSig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x4085cc08" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="48:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" name="IntSig5" provided="1" ref="0x4085e7d8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IntSig5" ref="0x4085e7d8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSig" qname="HplAtm128InterruptSig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x4085e9b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="43:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" name="IntSig0" provided="1" ref="0x4085c140">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IntSig0" ref="0x4085c140" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSig" qname="HplAtm128InterruptSig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x4085c318" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="46:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/pins/HplAtm128InterruptSigP.nc" name="IntSig3" provided="1" ref="0x4085cea8">
+      <component-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSigP" qname="HplAtm128InterruptSigP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="IntSig3" ref="0x4085cea8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.chips.atm128.pins.HplAtm128InterruptSig" qname="HplAtm128InterruptSig"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="fired" ref="0x4085e0c0" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

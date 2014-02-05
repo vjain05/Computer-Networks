@@ -1,0 +1,36 @@
+<?xml version="1.0" ?><component loc="2:lib/modules/AppyP.nc" nicename="lib.modules.AppyP" qname="AppyP">
+      <module/>
+    <specification><interface loc="3:lib/modules/AppyP.nc" name="Appy" provided="1" ref="0x40f6b810">
+      <component-ref nicename="lib.modules.AppyP" qname="AppyP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Appy" ref="0x40f6b810" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="lib.interfaces.Appy" qname="Appy"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="writeToBuffer" ref="0x40f6b9e8" scoped=""/>
+        <function-ref name="getBufferAddr" ref="0x40f6bac8" scoped=""/>
+        <function-ref name="setLength" ref="0x40f6bba8" scoped=""/>
+        <function-ref name="getMarker" ref="0x40f6bc88" scoped=""/>
+        <function-ref name="getLength" ref="0x40f6bd68" scoped=""/>
+        <function-ref name="setMarker" ref="0x40f6be48" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="4:lib/modules/AppyP.nc" name="Transport" provided="0" ref="0x40f68040">
+      <component-ref nicename="lib.modules.AppyP" qname="AppyP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Transport" ref="0x40f68040" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="lib.interfaces.Transport" qname="Transport"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="listen" ref="0x40f68218" scoped=""/>
+        <function-ref name="receive" ref="0x40f682f8" scoped=""/>
+        <function-ref name="release" ref="0x40f683d8" scoped=""/>
+        <function-ref name="bind" ref="0x40f684b8" scoped=""/>
+        <function-ref name="read" ref="0x40f68598" scoped=""/>
+        <function-ref name="socket" ref="0x40f68678" scoped=""/>
+        <function-ref name="connect" ref="0x40f68758" scoped=""/>
+        <function-ref name="accept" ref="0x40f68838" scoped=""/>
+        <function-ref name="write" ref="0x40f68918" scoped=""/>
+        <function-ref name="close" ref="0x40f689f8" scoped=""/>
+        <function-ref name="initUpdateTimer" ref="0x40f68ad8" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

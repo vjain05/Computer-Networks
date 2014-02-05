@@ -1,0 +1,22 @@
+<area shape="rect" id="node2" href="../chtml/lib.modules.SimpleSendP.html" title="SimpleSendP" alt="" coords="307,120,427,168">
+<area shape="poly" id="edge2" href="../ihtml/lib.interfaces.SimpleSend.html" title="SimpleSend" alt="" coords="369,54 369,106 364,106 364,54">
+<area shape="rect" id="edge2" href="../ihtml/lib.interfaces.SimpleSend.html" title="SimpleSend" alt="" coords="367,78,444,95">
+<area shape="rect" id="node3" href="../chtml/tos.system.TimerMilliC.html" title="TimerMilliC\n(sendTimer)" alt="" coords="5,235,131,296">
+<area shape="poly" id="edge4" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="307,154 205,170 158,182 127,194 109,208 95,225 91,222 106,204 124,190 157,176 204,165 306,148">
+<area shape="rect" id="edge4" href="../ihtml/tos.lib.timer.Timer.html" title="Timer&lt;TMilli&gt;" alt="" coords="125,193,215,210">
+<area shape="rect" id="node4" href="../chtml/tos.system.RandomC.html" title="RandomC" alt="" coords="155,236,264,295">
+<area shape="poly" id="edge6" href="../ihtml/tos.interfaces.Random.html" title="Random" alt="" coords="307,156 268,170 250,180 234,194 224,208 218,223 213,222 220,205 230,190 247,176 266,165 305,151">
+<area shape="rect" id="edge6" href="../ihtml/tos.interfaces.Random.html" title="Random" alt="" coords="232,193,285,210">
+<area shape="rect" id="node5" href="../chtml/tos.system.AMSenderC.html" title="AMSenderC" alt="" coords="305,236,428,295">
+<area shape="poly" id="edge8" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="318,170 297,193 295,209 303,225 299,227 289,210 292,191 314,166">
+<area shape="rect" id="edge8" href="../ihtml/tos.interfaces.Packet.html" title="Packet" alt="" coords="295,193,337,210">
+<area shape="poly" id="edge10" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="369,169 369,222 364,222 364,169">
+<area shape="rect" id="edge10" href="../ihtml/tos.interfaces.AMPacket.html" title="AMPacket" alt="" coords="367,193,429,210">
+<area shape="poly" id="edge12" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="413,167 433,191 436,210 427,227 422,225 430,209 428,193 409,170">
+<area shape="rect" id="edge12" href="../ihtml/tos.interfaces.AMSend.html" title="AMSend" alt="" coords="433,193,487,210">
+<area shape="rect" id="node6" href="../chtml/tos.system.PoolC.html" title="PoolC" alt="" coords="503,236,585,295">
+<area shape="poly" id="edge14" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;sendInfo&gt;" alt="" coords="428,157 462,170 494,190 523,222 519,226 490,194 459,175 426,162">
+<area shape="rect" id="edge14" href="../ihtml/tos.interfaces.Pool.html" title="Pool&lt;sendInfo&gt;" alt="" coords="509,193,613,210">
+<area shape="rect" id="node7" href="../chtml/tos.system.QueueC.html" title="QueueC" alt="" coords="637,241,720,289">
+<area shape="poly" id="edge16" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;sendInfo *&gt;" alt="" coords="427,148 535,165 585,176 620,190 642,207 659,228 655,231 638,211 617,194 584,181 534,170 427,153">
+<area shape="rect" id="edge16" href="../ihtml/tos.interfaces.Queue.html" title="Queue&lt;sendInfo *&gt;" alt="" coords="640,193,769,210">

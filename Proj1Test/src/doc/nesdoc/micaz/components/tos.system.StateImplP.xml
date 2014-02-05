@@ -1,0 +1,38 @@
+<?xml version="1.0" ?><component loc="64:/home/ubuntu/local/tinyos-2.1.1/tos/system/StateImplP.nc" nicename="tos.system.StateImplP" qname="StateImplP" safe="">
+      <documentation loc="32:/home/ubuntu/local/tinyos-2.1.1/tos/types/State.h">
+        <short>
+ </short>
+        <long>
+ @author David Moss
+</long>
+      </documentation>
+      <module/>
+    <specification><interface loc="66:/home/ubuntu/local/tinyos-2.1.1/tos/system/StateImplP.nc" name="Init" provided="1" ref="0x409067d8">
+      <component-ref nicename="tos.system.StateImplP" qname="StateImplP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="Init" ref="0x409067d8" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.Init" qname="Init"/>
+      </instance>
+      <interface-functions>
+        <function-ref name="init" ref="0x409069b0" scoped=""/>
+      </interface-functions>
+    </interface><interface loc="67:/home/ubuntu/local/tinyos-2.1.1/tos/system/StateImplP.nc" name="State" provided="1" ref="0x40906e08">
+      <component-ref nicename="tos.system.StateImplP" qname="StateImplP"/>
+      <type-interface alignment="I:1" size="I:2"><interface-ref name="State" ref="0x40906e08" scoped=""/></type-interface>
+      <instance>
+        <interfacedef-ref nicename="tos.interfaces.State" qname="State"/>
+      </instance>
+      <interface-parameters>
+        <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+          <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+        </type-int>
+      </interface-parameters>
+      <interface-functions>
+        <function-ref name="getState" ref="0x40902010" scoped=""/>
+        <function-ref name="toIdle" ref="0x409020f0" scoped=""/>
+        <function-ref name="isState" ref="0x409021d0" scoped=""/>
+        <function-ref name="isIdle" ref="0x409022b0" scoped=""/>
+        <function-ref name="requestState" ref="0x40902390" scoped=""/>
+        <function-ref name="forceState" ref="0x40902470" scoped=""/>
+      </interface-functions>
+    </interface></specification><referenced/></component>

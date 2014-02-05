@@ -1,0 +1,382 @@
+<?xml version="1.0" ?><interfacedef loc="78:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi">
+      <function command="" loc="86:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="initSlave" provided="0" ref="0x4091fc40">
+        <documentation loc="85:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc">
+          <short> Initialize the ATmega128 SPI bus into slave mode.</short>
+          <long> Initialize the ATmega128 SPI bus into slave mode. *</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="126:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="getClockPolarity" provided="0" ref="0x40918308">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="117:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="isSpiEnabled" provided="0" ref="0x4091b4b0">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="128:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="setClockPhase" provided="0" ref="0x409188f0">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="128:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="sampleOnTrailing" ref="0x40918798">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="83:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="initMaster" provided="0" ref="0x4091f7f0">
+        <documentation loc="82:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc">
+          <short> Initialize the ATmega128 SPI bus into master mode.</short>
+          <long> Initialize the ATmega128 SPI bus into master mode. *</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="122:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="setMasterBit" provided="0" ref="0x4091a420">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="122:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="isMaster" ref="0x4091a2c8">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="113:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="enableInterrupt" provided="0" ref="0x4091c6d0">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="113:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="enabled" ref="0x4091c578">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="97:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="read" provided="0" ref="0x4091d4f8">
+        <documentation loc="93:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc">
+          <short> 
+ Read the SPI data register 
+ </short>
+          <long> 
+ Read the SPI data register 
+ @return last data byte
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="141:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="setMasterDoubleSpeed" provided="0" ref="0x40934a10">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="141:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="on" ref="0x409348b8">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="114:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="isInterruptEnabled" provided="0" ref="0x4091cb28">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="131:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="setClock" provided="0" ref="0x409352c0">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="131:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="speed" ref="0x40935168">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="136:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="isInterruptPending" provided="0" ref="0x40935b48">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="125:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="setClockPolarity" provided="0" ref="0x4091aeb0">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="125:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="highWhenIdle" ref="0x4091ad58">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="140:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="isMasterDoubleSpeed" provided="0" ref="0x40934480">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="119:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="setDataOrder" provided="0" ref="0x4091ba40">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="119:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="lsbFirst" ref="0x4091b8e8">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="103:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="write" provided="0" ref="0x4091da90">
+        <documentation loc="99:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc">
+          <short> 
+ Write the SPI data register 
+ </short>
+          <long> 
+ Write the SPI data register 
+ @param data   next data byte
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="103:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="data" ref="0x4091d938">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="116:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="enableSpi" provided="0" ref="0x4091b090">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="116:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="busOn" ref="0x4091cf20">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+      <function command="" loc="123:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="isMasterBitSet" provided="0" ref="0x4091a8d0">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="129:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="getClockPhase" provided="0" ref="0x40918d18">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="132:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="getClock" provided="0" ref="0x409356d0">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="138:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="hasWriteCollided" provided="0" ref="0x40934010">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="120:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="isOrderLsbFirst" provided="0" ref="0x4091be78">
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+            <typename><typedef-ref name="bool" ref="0x4034b6e8"/></typename>
+          </type-int>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function command="" loc="89:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="sleep" provided="0" ref="0x4091d090">
+        <documentation loc="88:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc">
+          <short> Disable and sleep the ATmega128 SPI bus.</short>
+          <long> Disable and sleep the ATmega128 SPI bus. *</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+          </function-parameters>
+        </type-function>
+        <parameters>
+        </parameters>
+      </function>
+      <function event="" loc="109:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="dataReady" provided="0" ref="0x4091c088">
+        <documentation loc="105:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc">
+          <short>
+ Interrupt signalling SPI data cycle is complete.</short>
+          <long>
+ Interrupt signalling SPI data cycle is complete. 
+ @param data   data byte from data register
+</long>
+        </documentation>
+        <interfacedef-ref nicename="tos.chips.atm128.spi.Atm128Spi" qname="Atm128Spi"/>
+        <type-function alignment="I:1" size="I:1">
+          <type-void alignment="I:1" size="I:1"/>
+          <function-parameters>
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </function-parameters>
+        </type-function>
+        <parameters>
+          <variable loc="109:/home/ubuntu/local/tinyos-2.1.1/tos/chips/atm128/spi/Atm128Spi.nc" name="data" ref="0x4091df00">
+            <type-int alignment="I:1" cname="unsigned char" size="I:1" unsigned="">
+              <typename><typedef-ref name="uint8_t" ref="0x4020db68"/></typename>
+            </type-int>
+          </variable>
+        </parameters>
+      </function>
+    </interfacedef>
